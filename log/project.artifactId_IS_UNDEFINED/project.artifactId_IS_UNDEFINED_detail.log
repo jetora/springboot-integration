@@ -1,0 +1,934 @@
+18-04-18.15:11:13.633 [main            ] INFO  SpringBootMain          - Starting SpringBootMain on ZB-MP120GHR with PID 11016 (D:\jcode\springboot-integration\web\target\classes started by zhaochen5 in D:\jcode\springboot-integration)
+18-04-18.15:11:13.636 [main            ] INFO  SpringBootMain          - No active profile set, falling back to default profiles: default
+18-04-18.15:11:13.678 [main            ] INFO  AnnotationConfigReactiveWebServerApplicationContext  - Refreshing org.springframework.boot.web.reactive.context.AnnotationConfigReactiveWebServerApplicationContext@131ef10: startup date [Wed Apr 18 15:11:13 CST 2018]; root of context hierarchy
+18-04-18.15:11:14.272 [main            ] INFO  RepositoryConfigurationDelegate  - Multiple Spring Data modules found, entering strict repository configuration mode!
+18-04-18.15:11:14.572 [main            ] INFO  PostProcessorRegistrationDelegate$BeanPostProcessorChecker  - Bean 'org.springframework.amqp.rabbit.annotation.RabbitBootstrapConfiguration' of type [org.springframework.amqp.rabbit.annotation.RabbitBootstrapConfiguration$$EnhancerBySpringCGLIB$$4a6bf2a] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+18-04-18.15:11:14.931 [main            ] INFO  RequestMappingHandlerMapping  - Mapped "{[/list],methods=[GET]}" onto public java.lang.Object org.flow.controller.UserController.list()
+18-04-18.15:11:14.981 [main            ] INFO  SimpleUrlHandlerMapping  - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.reactive.resource.ResourceWebHandler]
+18-04-18.15:11:14.981 [main            ] INFO  SimpleUrlHandlerMapping  - Mapped URL path [/**] onto handler of type [class org.springframework.web.reactive.resource.ResourceWebHandler]
+18-04-18.15:11:15.033 [main            ] INFO  ControllerMethodResolver  - Looking for @ControllerAdvice: org.springframework.boot.web.reactive.context.AnnotationConfigReactiveWebServerApplicationContext@131ef10: startup date [Wed Apr 18 15:11:13 CST 2018]; root of context hierarchy
+18-04-18.15:11:15.339 [main            ] WARN  AnnotationConfigReactiveWebServerApplicationContext  - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'userController': Injection of resource dependencies failed; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'userServiceImpl': Injection of resource dependencies failed; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'userMapper' defined in file [D:\jcode\springboot-integration\dao\target\classes\org\flow\dao\mapper\UserMapper.class]: Unsatisfied dependency expressed through bean property 'sqlSessionFactory'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'sqlSessionFactory' defined in class path resource [org/mybatis/spring/boot/autoconfigure/MybatisAutoConfiguration.class]: Unsatisfied dependency expressed through method 'sqlSessionFactory' parameter 0; nested exception is org.springframework.boot.context.properties.ConfigurationPropertiesBindException: Error creating bean with name 'druidDataSource': Could not bind properties to 'DruidDataSource' : prefix=spring.datasource, ignoreInvalidFields=false, ignoreUnknownFields=true; nested exception is org.springframework.boot.context.properties.bind.BindException: Failed to bind properties under 'spring.datasource' to javax.sql.DataSource
+18-04-18.15:11:15.347 [main            ] INFO  ConditionEvaluationReportLoggingListener  - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+18-04-18.15:11:15.351 [main            ] ERROR LoggingFailureAnalysisReporter  - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Failed to bind properties under 'spring.datasource' to javax.sql.DataSource:
+
+    Property: spring.datasource.filters
+    Value: stat,wall,log4j
+    Origin: class path resource [application.yml]:12:14
+    Reason: Unable to set value for property filters
+
+Action:
+
+Update your application's configuration
+
+18-04-18.15:12:25.495 [main            ] INFO  SpringBootMain          - Starting SpringBootMain on ZB-MP120GHR with PID 12364 (D:\jcode\springboot-integration\web\target\classes started by zhaochen5 in D:\jcode\springboot-integration)
+18-04-18.15:12:25.498 [main            ] INFO  SpringBootMain          - No active profile set, falling back to default profiles: default
+18-04-18.15:12:25.538 [main            ] INFO  AnnotationConfigReactiveWebServerApplicationContext  - Refreshing org.springframework.boot.web.reactive.context.AnnotationConfigReactiveWebServerApplicationContext@6c40365c: startup date [Wed Apr 18 15:12:25 CST 2018]; root of context hierarchy
+18-04-18.15:12:26.136 [main            ] INFO  RepositoryConfigurationDelegate  - Multiple Spring Data modules found, entering strict repository configuration mode!
+18-04-18.15:12:26.474 [main            ] INFO  PostProcessorRegistrationDelegate$BeanPostProcessorChecker  - Bean 'org.springframework.amqp.rabbit.annotation.RabbitBootstrapConfiguration' of type [org.springframework.amqp.rabbit.annotation.RabbitBootstrapConfiguration$$EnhancerBySpringCGLIB$$171ab7fa] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+18-04-18.15:12:26.864 [main            ] INFO  RequestMappingHandlerMapping  - Mapped "{[/list],methods=[GET]}" onto public java.lang.Object org.flow.controller.UserController.list()
+18-04-18.15:12:26.929 [main            ] INFO  SimpleUrlHandlerMapping  - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.reactive.resource.ResourceWebHandler]
+18-04-18.15:12:26.929 [main            ] INFO  SimpleUrlHandlerMapping  - Mapped URL path [/**] onto handler of type [class org.springframework.web.reactive.resource.ResourceWebHandler]
+18-04-18.15:12:26.973 [main            ] INFO  ControllerMethodResolver  - Looking for @ControllerAdvice: org.springframework.boot.web.reactive.context.AnnotationConfigReactiveWebServerApplicationContext@6c40365c: startup date [Wed Apr 18 15:12:25 CST 2018]; root of context hierarchy
+18-04-18.15:12:27.414 [main            ] WARN  AnnotationConfigReactiveWebServerApplicationContext  - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'userController': Injection of resource dependencies failed; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'userServiceImpl': Injection of resource dependencies failed; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'userMapper' defined in file [D:\jcode\springboot-integration\dao\target\classes\org\flow\dao\mapper\UserMapper.class]: Unsatisfied dependency expressed through bean property 'sqlSessionFactory'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'sqlSessionFactory' defined in class path resource [org/mybatis/spring/boot/autoconfigure/MybatisAutoConfiguration.class]: Unsatisfied dependency expressed through method 'sqlSessionFactory' parameter 0; nested exception is org.springframework.boot.context.properties.ConfigurationPropertiesBindException: Error creating bean with name 'druidDataSource': Could not bind properties to 'DruidDataSource' : prefix=spring.datasource, ignoreInvalidFields=false, ignoreUnknownFields=true; nested exception is org.springframework.boot.context.properties.bind.BindException: Failed to bind properties under 'spring.datasource' to javax.sql.DataSource
+18-04-18.15:12:27.423 [main            ] INFO  ConditionEvaluationReportLoggingListener  - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+18-04-18.15:12:27.428 [main            ] ERROR LoggingFailureAnalysisReporter  - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Failed to bind properties under 'spring.datasource' to javax.sql.DataSource:
+
+    Property: spring.datasource.filters
+    Value: stat,wall,log4j
+    Origin: class path resource [application.yml]:12:14
+    Reason: Unable to set value for property filters
+
+Action:
+
+Update your application's configuration
+
+18-04-18.15:13:19.539 [main            ] INFO  SpringBootMain          - Starting SpringBootMain on ZB-MP120GHR with PID 13232 (D:\jcode\springboot-integration\web\target\classes started by zhaochen5 in D:\jcode\springboot-integration)
+18-04-18.15:13:19.543 [main            ] INFO  SpringBootMain          - No active profile set, falling back to default profiles: default
+18-04-18.15:13:19.625 [main            ] INFO  AnnotationConfigReactiveWebServerApplicationContext  - Refreshing org.springframework.boot.web.reactive.context.AnnotationConfigReactiveWebServerApplicationContext@6c40365c: startup date [Wed Apr 18 15:13:19 CST 2018]; root of context hierarchy
+18-04-18.15:13:20.533 [main            ] INFO  RepositoryConfigurationDelegate  - Multiple Spring Data modules found, entering strict repository configuration mode!
+18-04-18.15:13:20.855 [main            ] INFO  PostProcessorRegistrationDelegate$BeanPostProcessorChecker  - Bean 'org.springframework.amqp.rabbit.annotation.RabbitBootstrapConfiguration' of type [org.springframework.amqp.rabbit.annotation.RabbitBootstrapConfiguration$$EnhancerBySpringCGLIB$$171ab7fa] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+18-04-18.15:13:21.200 [main            ] INFO  RequestMappingHandlerMapping  - Mapped "{[/list],methods=[GET]}" onto public java.lang.Object org.flow.controller.UserController.list()
+18-04-18.15:13:21.253 [main            ] INFO  SimpleUrlHandlerMapping  - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.reactive.resource.ResourceWebHandler]
+18-04-18.15:13:21.253 [main            ] INFO  SimpleUrlHandlerMapping  - Mapped URL path [/**] onto handler of type [class org.springframework.web.reactive.resource.ResourceWebHandler]
+18-04-18.15:13:21.298 [main            ] INFO  ControllerMethodResolver  - Looking for @ControllerAdvice: org.springframework.boot.web.reactive.context.AnnotationConfigReactiveWebServerApplicationContext@6c40365c: startup date [Wed Apr 18 15:13:19 CST 2018]; root of context hierarchy
+18-04-18.15:13:22.705 [main            ] INFO  AnnotationMBeanExporter  - Registering beans for JMX exposure on startup
+18-04-18.15:13:22.706 [main            ] INFO  AnnotationMBeanExporter  - Bean with name 'druidDataSource' has been autodetected for JMX exposure
+18-04-18.15:13:22.713 [main            ] INFO  AnnotationMBeanExporter  - Bean with name 'rabbitConnectionFactory' has been autodetected for JMX exposure
+18-04-18.15:13:22.716 [main            ] INFO  AnnotationMBeanExporter  - Located managed bean 'rabbitConnectionFactory': registering with JMX server as MBean [org.springframework.amqp.rabbit.connection:name=rabbitConnectionFactory,type=CachingConnectionFactory]
+18-04-18.15:13:22.735 [main            ] INFO  AnnotationMBeanExporter  - Located MBean 'druidDataSource': registering with JMX server as MBean [com.alibaba.druid.pool:name=druidDataSource,type=DruidDataSource]
+18-04-18.15:13:22.741 [main            ] INFO  DefaultLifecycleProcessor  - Starting beans in phase 2147483647
+18-04-18.15:13:23.101 [reactor-http-nio-1] INFO  BlockingNettyContext    - Started HttpServer on /0:0:0:0:0:0:0:0:8080
+18-04-18.15:13:23.102 [main            ] INFO  NettyWebServer          - Netty started on port(s): 8080
+18-04-18.15:13:23.107 [main            ] INFO  SpringBootMain          - Started SpringBootMain in 4.284 seconds (JVM running for 5.521)
+18-04-18.15:13:36.501 [reactor-http-nio-3] INFO  DruidDataSource         - {dataSource-1} inited
+18-04-18.15:13:36.623 [reactor-http-nio-3] DEBUG selectAll               - ==>  Preparing: select id, organization_id, username, password, salt, role_ids, locked, create_time, update_time from sys_user 
+18-04-18.15:13:36.636 [reactor-http-nio-3] DEBUG selectAll               - ==> Parameters: 
+18-04-18.15:13:36.647 [reactor-http-nio-3] TRACE selectAll               - <==    Columns: id, organization_id, username, password, salt, role_ids, locked, create_time, update_time
+18-04-18.15:13:36.648 [reactor-http-nio-3] TRACE selectAll               - <==        Row: 1, 1, admin, d3c59d25033dbf980d29554025c23a75, 8d78869f470951332959580424d4bf4f, 1, 0, 2018-04-17 13:09:11, 2018-04-17 13:09:11
+18-04-18.15:13:36.651 [reactor-http-nio-3] DEBUG selectAll               - <==      Total: 1
+18-04-18.15:14:22.118 [reactor-http-nio-4] WARN  DefaultErrorWebExceptionHandler  - Failed to handle request [GET http://localhost:8080/druid]: Response status 404
+18-04-18.15:14:41.304 [reactor-http-nio-2] DEBUG selectAll               - ==>  Preparing: select id, organization_id, username, password, salt, role_ids, locked, create_time, update_time from sys_user 
+18-04-18.15:14:41.304 [reactor-http-nio-2] DEBUG selectAll               - ==> Parameters: 
+18-04-18.15:14:41.306 [reactor-http-nio-2] TRACE selectAll               - <==    Columns: id, organization_id, username, password, salt, role_ids, locked, create_time, update_time
+18-04-18.15:14:41.306 [reactor-http-nio-2] TRACE selectAll               - <==        Row: 1, 1, admin, d3c59d25033dbf980d29554025c23a75, 8d78869f470951332959580424d4bf4f, 1, 0, 2018-04-17 13:09:11, 2018-04-17 13:09:11
+18-04-18.15:14:41.309 [reactor-http-nio-2] DEBUG selectAll               - <==      Total: 1
+18-04-18.15:16:04.199 [main            ] INFO  SpringBootMain          - Starting SpringBootMain on ZB-MP120GHR with PID 3700 (D:\jcode\springboot-integration\web\target\classes started by zhaochen5 in D:\jcode\springboot-integration)
+18-04-18.15:16:04.203 [main            ] INFO  SpringBootMain          - No active profile set, falling back to default profiles: default
+18-04-18.15:16:04.274 [main            ] INFO  AnnotationConfigReactiveWebServerApplicationContext  - Refreshing org.springframework.boot.web.reactive.context.AnnotationConfigReactiveWebServerApplicationContext@41a2befb: startup date [Wed Apr 18 15:16:04 CST 2018]; root of context hierarchy
+18-04-18.15:16:05.247 [main            ] INFO  RepositoryConfigurationDelegate  - Multiple Spring Data modules found, entering strict repository configuration mode!
+18-04-18.15:16:05.557 [main            ] INFO  PostProcessorRegistrationDelegate$BeanPostProcessorChecker  - Bean 'org.springframework.amqp.rabbit.annotation.RabbitBootstrapConfiguration' of type [org.springframework.amqp.rabbit.annotation.RabbitBootstrapConfiguration$$EnhancerBySpringCGLIB$$3110390c] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+18-04-18.15:16:05.935 [main            ] INFO  RequestMappingHandlerMapping  - Mapped "{[/list],methods=[GET]}" onto public java.lang.Object org.flow.controller.UserController.list()
+18-04-18.15:16:05.987 [main            ] INFO  SimpleUrlHandlerMapping  - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.reactive.resource.ResourceWebHandler]
+18-04-18.15:16:05.987 [main            ] INFO  SimpleUrlHandlerMapping  - Mapped URL path [/**] onto handler of type [class org.springframework.web.reactive.resource.ResourceWebHandler]
+18-04-18.15:16:06.031 [main            ] INFO  ControllerMethodResolver  - Looking for @ControllerAdvice: org.springframework.boot.web.reactive.context.AnnotationConfigReactiveWebServerApplicationContext@41a2befb: startup date [Wed Apr 18 15:16:04 CST 2018]; root of context hierarchy
+18-04-18.15:16:06.347 [main            ] WARN  AnnotationConfigReactiveWebServerApplicationContext  - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'userController': Injection of resource dependencies failed; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'userServiceImpl': Injection of resource dependencies failed; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'userMapper' defined in file [D:\jcode\springboot-integration\dao\target\classes\org\flow\dao\mapper\UserMapper.class]: Unsatisfied dependency expressed through bean property 'sqlSessionFactory'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'sqlSessionFactory' defined in class path resource [org/mybatis/spring/boot/autoconfigure/MybatisAutoConfiguration.class]: Unsatisfied dependency expressed through method 'sqlSessionFactory' parameter 0; nested exception is org.springframework.boot.context.properties.ConfigurationPropertiesBindException: Error creating bean with name 'druidDataSource': Could not bind properties to 'DruidDataSource' : prefix=spring.datasource, ignoreInvalidFields=false, ignoreUnknownFields=true; nested exception is org.springframework.boot.context.properties.bind.BindException: Failed to bind properties under 'spring.datasource' to javax.sql.DataSource
+18-04-18.15:16:06.366 [main            ] INFO  ConditionEvaluationReportLoggingListener  - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+18-04-18.15:16:06.371 [main            ] ERROR LoggingFailureAnalysisReporter  - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Failed to bind properties under 'spring.datasource' to javax.sql.DataSource:
+
+    Property: spring.datasource.filters
+    Value: stat,wall,log4j
+    Origin: class path resource [application.yml]:12:14
+    Reason: Unable to set value for property filters
+
+Action:
+
+Update your application's configuration
+
+18-04-18.15:21:48.885 [main            ] INFO  SpringBootMain          - Starting SpringBootMain on ZB-MP120GHR with PID 13732 (D:\jcode\springboot-integration\web\target\classes started by zhaochen5 in D:\jcode\springboot-integration)
+18-04-18.15:21:48.890 [main            ] INFO  SpringBootMain          - No active profile set, falling back to default profiles: default
+18-04-18.15:21:48.967 [main            ] INFO  AnnotationConfigReactiveWebServerApplicationContext  - Refreshing org.springframework.boot.web.reactive.context.AnnotationConfigReactiveWebServerApplicationContext@5e5d171f: startup date [Wed Apr 18 15:21:48 CST 2018]; root of context hierarchy
+18-04-18.15:21:49.596 [main            ] INFO  RepositoryConfigurationDelegate  - Multiple Spring Data modules found, entering strict repository configuration mode!
+18-04-18.15:21:49.890 [main            ] INFO  PostProcessorRegistrationDelegate$BeanPostProcessorChecker  - Bean 'org.springframework.amqp.rabbit.annotation.RabbitBootstrapConfiguration' of type [org.springframework.amqp.rabbit.annotation.RabbitBootstrapConfiguration$$EnhancerBySpringCGLIB$$6dfa229f] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+18-04-18.15:21:50.240 [main            ] INFO  RequestMappingHandlerMapping  - Mapped "{[/list],methods=[GET]}" onto public java.lang.Object org.flow.controller.UserController.list()
+18-04-18.15:21:50.288 [main            ] INFO  SimpleUrlHandlerMapping  - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.reactive.resource.ResourceWebHandler]
+18-04-18.15:21:50.288 [main            ] INFO  SimpleUrlHandlerMapping  - Mapped URL path [/**] onto handler of type [class org.springframework.web.reactive.resource.ResourceWebHandler]
+18-04-18.15:21:50.329 [main            ] INFO  ControllerMethodResolver  - Looking for @ControllerAdvice: org.springframework.boot.web.reactive.context.AnnotationConfigReactiveWebServerApplicationContext@5e5d171f: startup date [Wed Apr 18 15:21:48 CST 2018]; root of context hierarchy
+18-04-18.15:21:51.644 [main            ] INFO  AnnotationMBeanExporter  - Registering beans for JMX exposure on startup
+18-04-18.15:21:51.645 [main            ] INFO  AnnotationMBeanExporter  - Bean with name 'druidDataSource' has been autodetected for JMX exposure
+18-04-18.15:21:51.652 [main            ] INFO  AnnotationMBeanExporter  - Bean with name 'rabbitConnectionFactory' has been autodetected for JMX exposure
+18-04-18.15:21:51.654 [main            ] INFO  AnnotationMBeanExporter  - Located managed bean 'rabbitConnectionFactory': registering with JMX server as MBean [org.springframework.amqp.rabbit.connection:name=rabbitConnectionFactory,type=CachingConnectionFactory]
+18-04-18.15:21:51.671 [main            ] INFO  AnnotationMBeanExporter  - Located MBean 'druidDataSource': registering with JMX server as MBean [com.alibaba.druid.pool:name=druidDataSource,type=DruidDataSource]
+18-04-18.15:21:51.676 [main            ] INFO  DefaultLifecycleProcessor  - Starting beans in phase 2147483647
+18-04-18.15:21:52.009 [reactor-http-nio-1] INFO  BlockingNettyContext    - Started HttpServer on /0:0:0:0:0:0:0:0:8080
+18-04-18.15:21:52.010 [main            ] INFO  NettyWebServer          - Netty started on port(s): 8080
+18-04-18.15:21:52.014 [main            ] INFO  SpringBootMain          - Started SpringBootMain in 4.216 seconds (JVM running for 5.395)
+18-04-18.15:21:57.283 [reactor-http-nio-3] INFO  DruidDataSource         - {dataSource-1} inited
+18-04-18.15:21:57.422 [reactor-http-nio-3] DEBUG selectAll               - ==>  Preparing: select id, organization_id, username, password, salt, role_ids, locked, create_time, update_time from sys_user 
+18-04-18.15:21:57.438 [reactor-http-nio-3] DEBUG selectAll               - ==> Parameters: 
+18-04-18.15:21:57.450 [reactor-http-nio-3] TRACE selectAll               - <==    Columns: id, organization_id, username, password, salt, role_ids, locked, create_time, update_time
+18-04-18.15:21:57.451 [reactor-http-nio-3] TRACE selectAll               - <==        Row: 1, 1, admin, d3c59d25033dbf980d29554025c23a75, 8d78869f470951332959580424d4bf4f, 1, 0, 2018-04-17 13:09:11, 2018-04-17 13:09:11
+18-04-18.15:21:57.454 [reactor-http-nio-3] DEBUG selectAll               - <==      Total: 1
+18-04-18.15:22:01.655 [reactor-http-nio-4] DEBUG selectAll               - ==>  Preparing: select id, organization_id, username, password, salt, role_ids, locked, create_time, update_time from sys_user 
+18-04-18.15:22:01.656 [reactor-http-nio-4] DEBUG selectAll               - ==> Parameters: 
+18-04-18.15:22:01.658 [reactor-http-nio-4] TRACE selectAll               - <==    Columns: id, organization_id, username, password, salt, role_ids, locked, create_time, update_time
+18-04-18.15:22:01.659 [reactor-http-nio-4] TRACE selectAll               - <==        Row: 1, 1, admin, d3c59d25033dbf980d29554025c23a75, 8d78869f470951332959580424d4bf4f, 1, 0, 2018-04-17 13:09:11, 2018-04-17 13:09:11
+18-04-18.15:22:01.665 [reactor-http-nio-4] DEBUG selectAll               - <==      Total: 1
+18-04-18.15:22:03.740 [reactor-http-nio-4] WARN  DefaultErrorWebExceptionHandler  - Failed to handle request [GET http://localhost:8080/druid]: Response status 404
+18-04-18.15:23:03.475 [reactor-http-nio-2] WARN  DefaultErrorWebExceptionHandler  - Failed to handle request [GET http://127.0.0.1:8080/druid/index.html]: Response status 404
+18-04-18.15:23:03.825 [reactor-http-nio-2] WARN  DefaultErrorWebExceptionHandler  - Failed to handle request [GET http://127.0.0.1:8080/favicon.ico]: Response status 404
+18-04-18.15:23:11.478 [reactor-http-nio-4] WARN  DefaultErrorWebExceptionHandler  - Failed to handle request [GET http://localhost:8080/druid/index.html]: Response status 404
+18-04-18.15:27:34.747 [reactor-http-nio-2] WARN  DefaultErrorWebExceptionHandler  - Failed to handle request [GET http://localhost:8080/druid/login.html]: Response status 404
+18-04-18.15:28:35.892 [reactor-http-nio-4] DEBUG selectAll               - ==>  Preparing: select id, organization_id, username, password, salt, role_ids, locked, create_time, update_time from sys_user 
+18-04-18.15:28:35.893 [reactor-http-nio-4] DEBUG selectAll               - ==> Parameters: 
+18-04-18.15:28:35.894 [reactor-http-nio-4] TRACE selectAll               - <==    Columns: id, organization_id, username, password, salt, role_ids, locked, create_time, update_time
+18-04-18.15:28:35.895 [reactor-http-nio-4] TRACE selectAll               - <==        Row: 1, 1, admin, d3c59d25033dbf980d29554025c23a75, 8d78869f470951332959580424d4bf4f, 1, 0, 2018-04-17 13:09:11, 2018-04-17 13:09:11
+18-04-18.15:28:35.896 [reactor-http-nio-4] DEBUG selectAll               - <==      Total: 1
+18-04-18.15:28:39.832 [reactor-http-nio-4] WARN  DefaultErrorWebExceptionHandler  - Failed to handle request [GET http://localhost:8080/list/druid]: Response status 404
+18-04-18.15:28:44.347 [reactor-http-nio-2] WARN  DefaultErrorWebExceptionHandler  - Failed to handle request [GET http://localhost:8080/druid]: Response status 404
+18-04-18.15:47:23.694 [main            ] INFO  SpringBootMain          - Starting SpringBootMain on ZB-MP120GHR with PID 14180 (D:\jcode\springboot-integration\web\target\classes started by zhaochen5 in D:\jcode\springboot-integration)
+18-04-18.15:47:23.698 [main            ] INFO  SpringBootMain          - No active profile set, falling back to default profiles: default
+18-04-18.15:47:23.771 [main            ] INFO  AnnotationConfigReactiveWebServerApplicationContext  - Refreshing org.springframework.boot.web.reactive.context.AnnotationConfigReactiveWebServerApplicationContext@7bedc48a: startup date [Wed Apr 18 15:47:23 CST 2018]; root of context hierarchy
+18-04-18.15:47:24.612 [main            ] INFO  RepositoryConfigurationDelegate  - Multiple Spring Data modules found, entering strict repository configuration mode!
+18-04-18.15:47:24.910 [main            ] INFO  PostProcessorRegistrationDelegate$BeanPostProcessorChecker  - Bean 'org.springframework.amqp.rabbit.annotation.RabbitBootstrapConfiguration' of type [org.springframework.amqp.rabbit.annotation.RabbitBootstrapConfiguration$$EnhancerBySpringCGLIB$$8fe93fb2] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+18-04-18.15:47:25.273 [main            ] INFO  RequestMappingHandlerMapping  - Mapped "{[/list],methods=[GET]}" onto public java.lang.Object org.flow.controller.UserController.list()
+18-04-18.15:47:25.322 [main            ] INFO  SimpleUrlHandlerMapping  - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.reactive.resource.ResourceWebHandler]
+18-04-18.15:47:25.322 [main            ] INFO  SimpleUrlHandlerMapping  - Mapped URL path [/**] onto handler of type [class org.springframework.web.reactive.resource.ResourceWebHandler]
+18-04-18.15:47:25.366 [main            ] INFO  ControllerMethodResolver  - Looking for @ControllerAdvice: org.springframework.boot.web.reactive.context.AnnotationConfigReactiveWebServerApplicationContext@7bedc48a: startup date [Wed Apr 18 15:47:23 CST 2018]; root of context hierarchy
+18-04-18.15:47:26.754 [main            ] INFO  AnnotationMBeanExporter  - Registering beans for JMX exposure on startup
+18-04-18.15:47:26.755 [main            ] INFO  AnnotationMBeanExporter  - Bean with name 'druidDataSource' has been autodetected for JMX exposure
+18-04-18.15:47:26.764 [main            ] INFO  AnnotationMBeanExporter  - Bean with name 'rabbitConnectionFactory' has been autodetected for JMX exposure
+18-04-18.15:47:26.766 [main            ] INFO  AnnotationMBeanExporter  - Located managed bean 'rabbitConnectionFactory': registering with JMX server as MBean [org.springframework.amqp.rabbit.connection:name=rabbitConnectionFactory,type=CachingConnectionFactory]
+18-04-18.15:47:26.788 [main            ] INFO  AnnotationMBeanExporter  - Located MBean 'druidDataSource': registering with JMX server as MBean [com.alibaba.druid.pool:name=druidDataSource,type=DruidDataSource]
+18-04-18.15:47:26.795 [main            ] INFO  DefaultLifecycleProcessor  - Starting beans in phase 2147483647
+18-04-18.15:47:27.181 [reactor-http-nio-1] INFO  BlockingNettyContext    - Started HttpServer on /0:0:0:0:0:0:0:0:8080
+18-04-18.15:47:27.182 [main            ] INFO  NettyWebServer          - Netty started on port(s): 8080
+18-04-18.15:47:27.186 [main            ] INFO  SpringBootMain          - Started SpringBootMain in 4.368 seconds (JVM running for 7.134)
+18-04-18.15:47:47.655 [reactor-http-nio-2] WARN  DefaultErrorWebExceptionHandler  - Failed to handle request [GET http://localhost:8080/druid/]: Response status 404
+18-04-18.15:52:32.346 [main            ] INFO  SpringBootTestContextBootstrapper  - Neither @ContextConfiguration nor @ContextHierarchy found for test class [org.flow.TestUserService], using SpringBootContextLoader
+18-04-18.15:52:32.365 [main            ] INFO  AbstractContextLoader   - Could not detect default resource locations for test class [org.flow.TestUserService]: no resource found for suffixes {-context.xml, Context.groovy}.
+18-04-18.15:52:33.181 [main            ] INFO  SpringBootTestContextBootstrapper  - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+18-04-18.15:52:33.481 [main            ] INFO  SpringBootTestContextBootstrapper  - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@e350b40, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@41a0aa7d, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@2794eab6, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@6340e5f0, org.springframework.test.context.support.DirtiesContextTestExecutionListener@45099dd3, org.springframework.test.context.transaction.TransactionalTestExecutionListener@13e344d, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@1ffaf86, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@6574a52c, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@6c1a5b54, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@1c7696c6, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@60099951, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@20140db9]
+18-04-18.15:52:34.519 [main            ] INFO  TestUserService         - Starting TestUserService on ZB-MP120GHR with PID 12324 (started by zhaochen5 in D:\jcode\springboot-integration\web)
+18-04-18.15:52:34.520 [main            ] INFO  TestUserService         - No active profile set, falling back to default profiles: default
+18-04-18.15:52:34.573 [main            ] INFO  GenericReactiveWebApplicationContext  - Refreshing org.springframework.boot.web.reactive.context.GenericReactiveWebApplicationContext@37e4d7bb: startup date [Wed Apr 18 15:52:34 CST 2018]; root of context hierarchy
+18-04-18.15:52:35.341 [main            ] INFO  RepositoryConfigurationDelegate  - Multiple Spring Data modules found, entering strict repository configuration mode!
+18-04-18.15:52:35.992 [main            ] INFO  PostProcessorRegistrationDelegate$BeanPostProcessorChecker  - Bean 'org.springframework.amqp.rabbit.annotation.RabbitBootstrapConfiguration' of type [org.springframework.amqp.rabbit.annotation.RabbitBootstrapConfiguration$$EnhancerBySpringCGLIB$$b34beaec] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+18-04-18.15:52:37.385 [main            ] INFO  RequestMappingHandlerMapping  - Mapped "{[/list],methods=[GET]}" onto public java.lang.Object org.flow.controller.UserController.list()
+18-04-18.15:52:37.425 [main            ] INFO  SimpleUrlHandlerMapping  - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.reactive.resource.ResourceWebHandler]
+18-04-18.15:52:37.425 [main            ] INFO  SimpleUrlHandlerMapping  - Mapped URL path [/**] onto handler of type [class org.springframework.web.reactive.resource.ResourceWebHandler]
+18-04-18.15:52:37.651 [main            ] INFO  ControllerMethodResolver  - Looking for @ControllerAdvice: org.springframework.boot.web.reactive.context.GenericReactiveWebApplicationContext@37e4d7bb: startup date [Wed Apr 18 15:52:34 CST 2018]; root of context hierarchy
+18-04-18.15:52:39.405 [main            ] INFO  DefaultLifecycleProcessor  - Starting beans in phase 2147483647
+18-04-18.15:52:39.422 [main            ] INFO  TestUserService         - Started TestUserService in 5.847 seconds (JVM running for 9.289)
+18-04-18.15:52:39.783 [main            ] INFO  DruidDataSource         - {dataSource-1} inited
+18-04-18.15:52:40.041 [Druid-ConnectionPool-Create-1576936424] ERROR DruidDataSource         - create connection SQLException, url: jdbc:mysql://localhost:3306/shiro?useUnicode=true&characterEncoding=utf-8&useSSL=true, errorCode 0, state 01S00
+java.sql.SQLException: The server time zone value '�й���׼ʱ��' is unrecognized or represents more than one time zone. You must configure either the server or JDBC driver (via the serverTimezone configuration property) to use a more specifc time zone value if you want to utilize time zone support.
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:545)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:513)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:505)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:479)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:489)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:69)
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:1606)
+	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:633)
+	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:347)
+	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:219)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1513)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1578)
+	at com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:2466)
+Caused by: com.mysql.cj.core.exceptions.InvalidConnectionAttributeException: The server time zone value '�й���׼ʱ��' is unrecognized or represents more than one time zone. You must configure either the server or JDBC driver (via the serverTimezone configuration property) to use a more specifc time zone value if you want to utilize time zone support.
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at com.mysql.cj.core.exceptions.ExceptionFactory.createException(ExceptionFactory.java:54)
+	at com.mysql.cj.core.exceptions.ExceptionFactory.createException(ExceptionFactory.java:73)
+	at com.mysql.cj.jdbc.util.TimeUtil.getCanonicalTimezone(TimeUtil.java:118)
+	at com.mysql.cj.mysqla.MysqlaSession.configureTimezone(MysqlaSession.java:293)
+	at com.mysql.cj.jdbc.ConnectionImpl.initializePropsFromServer(ConnectionImpl.java:2399)
+	at com.mysql.cj.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:1739)
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:1596)
+	... 6 common frames omitted
+18-04-18.15:52:40.050 [Druid-ConnectionPool-Create-1576936424] ERROR DruidDataSource         - create connection SQLException, url: jdbc:mysql://localhost:3306/shiro?useUnicode=true&characterEncoding=utf-8&useSSL=true, errorCode 0, state 01S00
+java.sql.SQLException: The server time zone value '�й���׼ʱ��' is unrecognized or represents more than one time zone. You must configure either the server or JDBC driver (via the serverTimezone configuration property) to use a more specifc time zone value if you want to utilize time zone support.
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:545)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:513)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:505)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:479)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:489)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:69)
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:1606)
+	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:633)
+	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:347)
+	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:219)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1513)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1578)
+	at com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:2466)
+Caused by: com.mysql.cj.core.exceptions.InvalidConnectionAttributeException: The server time zone value '�й���׼ʱ��' is unrecognized or represents more than one time zone. You must configure either the server or JDBC driver (via the serverTimezone configuration property) to use a more specifc time zone value if you want to utilize time zone support.
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at com.mysql.cj.core.exceptions.ExceptionFactory.createException(ExceptionFactory.java:54)
+	at com.mysql.cj.core.exceptions.ExceptionFactory.createException(ExceptionFactory.java:73)
+	at com.mysql.cj.jdbc.util.TimeUtil.getCanonicalTimezone(TimeUtil.java:118)
+	at com.mysql.cj.mysqla.MysqlaSession.configureTimezone(MysqlaSession.java:293)
+	at com.mysql.cj.jdbc.ConnectionImpl.initializePropsFromServer(ConnectionImpl.java:2399)
+	at com.mysql.cj.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:1739)
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:1596)
+	... 6 common frames omitted
+18-04-18.15:52:40.564 [Druid-ConnectionPool-Create-1576936424] ERROR DruidDataSource         - create connection SQLException, url: jdbc:mysql://localhost:3306/shiro?useUnicode=true&characterEncoding=utf-8&useSSL=true, errorCode 0, state 01S00
+java.sql.SQLException: The server time zone value '�й���׼ʱ��' is unrecognized or represents more than one time zone. You must configure either the server or JDBC driver (via the serverTimezone configuration property) to use a more specifc time zone value if you want to utilize time zone support.
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:545)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:513)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:505)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:479)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:489)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:69)
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:1606)
+	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:633)
+	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:347)
+	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:219)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1513)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1578)
+	at com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:2466)
+Caused by: com.mysql.cj.core.exceptions.InvalidConnectionAttributeException: The server time zone value '�й���׼ʱ��' is unrecognized or represents more than one time zone. You must configure either the server or JDBC driver (via the serverTimezone configuration property) to use a more specifc time zone value if you want to utilize time zone support.
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at com.mysql.cj.core.exceptions.ExceptionFactory.createException(ExceptionFactory.java:54)
+	at com.mysql.cj.core.exceptions.ExceptionFactory.createException(ExceptionFactory.java:73)
+	at com.mysql.cj.jdbc.util.TimeUtil.getCanonicalTimezone(TimeUtil.java:118)
+	at com.mysql.cj.mysqla.MysqlaSession.configureTimezone(MysqlaSession.java:293)
+	at com.mysql.cj.jdbc.ConnectionImpl.initializePropsFromServer(ConnectionImpl.java:2399)
+	at com.mysql.cj.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:1739)
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:1596)
+	... 6 common frames omitted
+18-04-18.15:52:41.072 [Druid-ConnectionPool-Create-1576936424] ERROR DruidDataSource         - create connection SQLException, url: jdbc:mysql://localhost:3306/shiro?useUnicode=true&characterEncoding=utf-8&useSSL=true, errorCode 0, state 01S00
+java.sql.SQLException: The server time zone value '�й���׼ʱ��' is unrecognized or represents more than one time zone. You must configure either the server or JDBC driver (via the serverTimezone configuration property) to use a more specifc time zone value if you want to utilize time zone support.
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:545)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:513)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:505)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:479)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:489)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:69)
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:1606)
+	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:633)
+	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:347)
+	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:219)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1513)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1578)
+	at com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:2466)
+Caused by: com.mysql.cj.core.exceptions.InvalidConnectionAttributeException: The server time zone value '�й���׼ʱ��' is unrecognized or represents more than one time zone. You must configure either the server or JDBC driver (via the serverTimezone configuration property) to use a more specifc time zone value if you want to utilize time zone support.
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at com.mysql.cj.core.exceptions.ExceptionFactory.createException(ExceptionFactory.java:54)
+	at com.mysql.cj.core.exceptions.ExceptionFactory.createException(ExceptionFactory.java:73)
+	at com.mysql.cj.jdbc.util.TimeUtil.getCanonicalTimezone(TimeUtil.java:118)
+	at com.mysql.cj.mysqla.MysqlaSession.configureTimezone(MysqlaSession.java:293)
+	at com.mysql.cj.jdbc.ConnectionImpl.initializePropsFromServer(ConnectionImpl.java:2399)
+	at com.mysql.cj.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:1739)
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:1596)
+	... 6 common frames omitted
+18-04-18.15:52:41.599 [Druid-ConnectionPool-Create-1576936424] ERROR DruidDataSource         - create connection SQLException, url: jdbc:mysql://localhost:3306/shiro?useUnicode=true&characterEncoding=utf-8&useSSL=true, errorCode 0, state 01S00
+java.sql.SQLException: The server time zone value '�й���׼ʱ��' is unrecognized or represents more than one time zone. You must configure either the server or JDBC driver (via the serverTimezone configuration property) to use a more specifc time zone value if you want to utilize time zone support.
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:545)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:513)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:505)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:479)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:489)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:69)
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:1606)
+	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:633)
+	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:347)
+	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:219)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1513)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1578)
+	at com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:2466)
+Caused by: com.mysql.cj.core.exceptions.InvalidConnectionAttributeException: The server time zone value '�й���׼ʱ��' is unrecognized or represents more than one time zone. You must configure either the server or JDBC driver (via the serverTimezone configuration property) to use a more specifc time zone value if you want to utilize time zone support.
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at com.mysql.cj.core.exceptions.ExceptionFactory.createException(ExceptionFactory.java:54)
+	at com.mysql.cj.core.exceptions.ExceptionFactory.createException(ExceptionFactory.java:73)
+	at com.mysql.cj.jdbc.util.TimeUtil.getCanonicalTimezone(TimeUtil.java:118)
+	at com.mysql.cj.mysqla.MysqlaSession.configureTimezone(MysqlaSession.java:293)
+	at com.mysql.cj.jdbc.ConnectionImpl.initializePropsFromServer(ConnectionImpl.java:2399)
+	at com.mysql.cj.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:1739)
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:1596)
+	... 6 common frames omitted
+18-04-18.15:52:42.112 [Druid-ConnectionPool-Create-1576936424] ERROR DruidDataSource         - create connection SQLException, url: jdbc:mysql://localhost:3306/shiro?useUnicode=true&characterEncoding=utf-8&useSSL=true, errorCode 0, state 01S00
+java.sql.SQLException: The server time zone value '�й���׼ʱ��' is unrecognized or represents more than one time zone. You must configure either the server or JDBC driver (via the serverTimezone configuration property) to use a more specifc time zone value if you want to utilize time zone support.
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:545)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:513)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:505)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:479)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:489)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:69)
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:1606)
+	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:633)
+	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:347)
+	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:219)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1513)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1578)
+	at com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:2466)
+Caused by: com.mysql.cj.core.exceptions.InvalidConnectionAttributeException: The server time zone value '�й���׼ʱ��' is unrecognized or represents more than one time zone. You must configure either the server or JDBC driver (via the serverTimezone configuration property) to use a more specifc time zone value if you want to utilize time zone support.
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at com.mysql.cj.core.exceptions.ExceptionFactory.createException(ExceptionFactory.java:54)
+	at com.mysql.cj.core.exceptions.ExceptionFactory.createException(ExceptionFactory.java:73)
+	at com.mysql.cj.jdbc.util.TimeUtil.getCanonicalTimezone(TimeUtil.java:118)
+	at com.mysql.cj.mysqla.MysqlaSession.configureTimezone(MysqlaSession.java:293)
+	at com.mysql.cj.jdbc.ConnectionImpl.initializePropsFromServer(ConnectionImpl.java:2399)
+	at com.mysql.cj.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:1739)
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:1596)
+	... 6 common frames omitted
+18-04-18.15:52:42.629 [Druid-ConnectionPool-Create-1576936424] ERROR DruidDataSource         - create connection SQLException, url: jdbc:mysql://localhost:3306/shiro?useUnicode=true&characterEncoding=utf-8&useSSL=true, errorCode 0, state 01S00
+java.sql.SQLException: The server time zone value '�й���׼ʱ��' is unrecognized or represents more than one time zone. You must configure either the server or JDBC driver (via the serverTimezone configuration property) to use a more specifc time zone value if you want to utilize time zone support.
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:545)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:513)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:505)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:479)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:489)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:69)
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:1606)
+	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:633)
+	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:347)
+	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:219)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1513)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1578)
+	at com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:2466)
+Caused by: com.mysql.cj.core.exceptions.InvalidConnectionAttributeException: The server time zone value '�й���׼ʱ��' is unrecognized or represents more than one time zone. You must configure either the server or JDBC driver (via the serverTimezone configuration property) to use a more specifc time zone value if you want to utilize time zone support.
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at com.mysql.cj.core.exceptions.ExceptionFactory.createException(ExceptionFactory.java:54)
+	at com.mysql.cj.core.exceptions.ExceptionFactory.createException(ExceptionFactory.java:73)
+	at com.mysql.cj.jdbc.util.TimeUtil.getCanonicalTimezone(TimeUtil.java:118)
+	at com.mysql.cj.mysqla.MysqlaSession.configureTimezone(MysqlaSession.java:293)
+	at com.mysql.cj.jdbc.ConnectionImpl.initializePropsFromServer(ConnectionImpl.java:2399)
+	at com.mysql.cj.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:1739)
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:1596)
+	... 6 common frames omitted
+18-04-18.15:52:43.142 [Druid-ConnectionPool-Create-1576936424] ERROR DruidDataSource         - create connection SQLException, url: jdbc:mysql://localhost:3306/shiro?useUnicode=true&characterEncoding=utf-8&useSSL=true, errorCode 0, state 01S00
+java.sql.SQLException: The server time zone value '�й���׼ʱ��' is unrecognized or represents more than one time zone. You must configure either the server or JDBC driver (via the serverTimezone configuration property) to use a more specifc time zone value if you want to utilize time zone support.
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:545)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:513)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:505)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:479)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:489)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:69)
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:1606)
+	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:633)
+	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:347)
+	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:219)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1513)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1578)
+	at com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:2466)
+Caused by: com.mysql.cj.core.exceptions.InvalidConnectionAttributeException: The server time zone value '�й���׼ʱ��' is unrecognized or represents more than one time zone. You must configure either the server or JDBC driver (via the serverTimezone configuration property) to use a more specifc time zone value if you want to utilize time zone support.
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at com.mysql.cj.core.exceptions.ExceptionFactory.createException(ExceptionFactory.java:54)
+	at com.mysql.cj.core.exceptions.ExceptionFactory.createException(ExceptionFactory.java:73)
+	at com.mysql.cj.jdbc.util.TimeUtil.getCanonicalTimezone(TimeUtil.java:118)
+	at com.mysql.cj.mysqla.MysqlaSession.configureTimezone(MysqlaSession.java:293)
+	at com.mysql.cj.jdbc.ConnectionImpl.initializePropsFromServer(ConnectionImpl.java:2399)
+	at com.mysql.cj.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:1739)
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:1596)
+	... 6 common frames omitted
+18-04-18.15:52:43.658 [Druid-ConnectionPool-Create-1576936424] ERROR DruidDataSource         - create connection SQLException, url: jdbc:mysql://localhost:3306/shiro?useUnicode=true&characterEncoding=utf-8&useSSL=true, errorCode 0, state 01S00
+java.sql.SQLException: The server time zone value '�й���׼ʱ��' is unrecognized or represents more than one time zone. You must configure either the server or JDBC driver (via the serverTimezone configuration property) to use a more specifc time zone value if you want to utilize time zone support.
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:545)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:513)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:505)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:479)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:489)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:69)
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:1606)
+	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:633)
+	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:347)
+	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:219)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1513)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1578)
+	at com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:2466)
+Caused by: com.mysql.cj.core.exceptions.InvalidConnectionAttributeException: The server time zone value '�й���׼ʱ��' is unrecognized or represents more than one time zone. You must configure either the server or JDBC driver (via the serverTimezone configuration property) to use a more specifc time zone value if you want to utilize time zone support.
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at com.mysql.cj.core.exceptions.ExceptionFactory.createException(ExceptionFactory.java:54)
+	at com.mysql.cj.core.exceptions.ExceptionFactory.createException(ExceptionFactory.java:73)
+	at com.mysql.cj.jdbc.util.TimeUtil.getCanonicalTimezone(TimeUtil.java:118)
+	at com.mysql.cj.mysqla.MysqlaSession.configureTimezone(MysqlaSession.java:293)
+	at com.mysql.cj.jdbc.ConnectionImpl.initializePropsFromServer(ConnectionImpl.java:2399)
+	at com.mysql.cj.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:1739)
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:1596)
+	... 6 common frames omitted
+18-04-18.15:53:12.927 [main            ] INFO  SpringBootTestContextBootstrapper  - Neither @ContextConfiguration nor @ContextHierarchy found for test class [org.flow.TestUserService], using SpringBootContextLoader
+18-04-18.15:53:12.937 [main            ] INFO  AbstractContextLoader   - Could not detect default resource locations for test class [org.flow.TestUserService]: no resource found for suffixes {-context.xml, Context.groovy}.
+18-04-18.15:53:13.467 [main            ] INFO  SpringBootTestContextBootstrapper  - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+18-04-18.15:53:13.761 [main            ] INFO  SpringBootTestContextBootstrapper  - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@e350b40, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@41a0aa7d, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@2794eab6, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@6340e5f0, org.springframework.test.context.support.DirtiesContextTestExecutionListener@45099dd3, org.springframework.test.context.transaction.TransactionalTestExecutionListener@13e344d, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@1ffaf86, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@6574a52c, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@6c1a5b54, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@1c7696c6, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@60099951, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@20140db9]
+18-04-18.15:53:15.196 [main            ] INFO  TestUserService         - Starting TestUserService on ZB-MP120GHR with PID 12332 (started by zhaochen5 in D:\jcode\springboot-integration\web)
+18-04-18.15:53:15.197 [main            ] INFO  TestUserService         - No active profile set, falling back to default profiles: default
+18-04-18.15:53:15.247 [main            ] INFO  GenericReactiveWebApplicationContext  - Refreshing org.springframework.boot.web.reactive.context.GenericReactiveWebApplicationContext@8e50104: startup date [Wed Apr 18 15:53:15 CST 2018]; root of context hierarchy
+18-04-18.15:53:16.369 [main            ] INFO  RepositoryConfigurationDelegate  - Multiple Spring Data modules found, entering strict repository configuration mode!
+18-04-18.15:53:17.288 [main            ] INFO  PostProcessorRegistrationDelegate$BeanPostProcessorChecker  - Bean 'org.springframework.amqp.rabbit.annotation.RabbitBootstrapConfiguration' of type [org.springframework.amqp.rabbit.annotation.RabbitBootstrapConfiguration$$EnhancerBySpringCGLIB$$cb508773] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+18-04-18.15:53:18.929 [main            ] INFO  RequestMappingHandlerMapping  - Mapped "{[/list],methods=[GET]}" onto public java.lang.Object org.flow.controller.UserController.list()
+18-04-18.15:53:18.975 [main            ] INFO  SimpleUrlHandlerMapping  - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.reactive.resource.ResourceWebHandler]
+18-04-18.15:53:18.976 [main            ] INFO  SimpleUrlHandlerMapping  - Mapped URL path [/**] onto handler of type [class org.springframework.web.reactive.resource.ResourceWebHandler]
+18-04-18.15:53:19.171 [main            ] INFO  ControllerMethodResolver  - Looking for @ControllerAdvice: org.springframework.boot.web.reactive.context.GenericReactiveWebApplicationContext@8e50104: startup date [Wed Apr 18 15:53:15 CST 2018]; root of context hierarchy
+18-04-18.15:53:20.831 [main            ] INFO  DefaultLifecycleProcessor  - Starting beans in phase 2147483647
+18-04-18.15:53:20.846 [main            ] INFO  TestUserService         - Started TestUserService in 6.924 seconds (JVM running for 9.959)
+18-04-18.15:53:21.149 [main            ] INFO  DruidDataSource         - {dataSource-1} inited
+18-04-18.15:53:21.453 [main            ] DEBUG selectAll               - ==>  Preparing: select id, organization_id, username, password, salt, role_ids, locked, create_time, update_time from sys_user 
+18-04-18.15:53:21.481 [main            ] DEBUG selectAll               - ==> Parameters: 
+18-04-18.15:53:21.498 [main            ] TRACE selectAll               - <==    Columns: id, organization_id, username, password, salt, role_ids, locked, create_time, update_time
+18-04-18.15:53:21.499 [main            ] TRACE selectAll               - <==        Row: 1, 1, admin, d3c59d25033dbf980d29554025c23a75, 8d78869f470951332959580424d4bf4f, 1, 0, 2018-04-17 13:09:11, 2018-04-17 13:09:11
+18-04-18.15:53:21.504 [main            ] DEBUG selectAll               - <==      Total: 1
+18-04-18.15:53:21.515 [Thread-2        ] INFO  GenericReactiveWebApplicationContext  - Closing org.springframework.boot.web.reactive.context.GenericReactiveWebApplicationContext@8e50104: startup date [Wed Apr 18 15:53:15 CST 2018]; root of context hierarchy
+18-04-18.15:53:21.517 [Thread-2        ] INFO  DefaultLifecycleProcessor  - Stopping beans in phase 2147483647
+18-04-18.15:53:21.517 [Thread-2        ] INFO  DefaultLifecycleProcessor  - Stopping beans in phase 0
+18-04-18.15:53:21.579 [Thread-2        ] INFO  DruidDataSource         - {dataSource-1} closed
+18-04-18.15:54:56.216 [main            ] INFO  SpringBootTestContextBootstrapper  - Neither @ContextConfiguration nor @ContextHierarchy found for test class [org.flow.TestUserService], using SpringBootContextLoader
+18-04-18.15:54:56.226 [main            ] INFO  AbstractContextLoader   - Could not detect default resource locations for test class [org.flow.TestUserService]: no resource found for suffixes {-context.xml, Context.groovy}.
+18-04-18.15:54:56.806 [main            ] INFO  SpringBootTestContextBootstrapper  - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+18-04-18.15:54:57.154 [main            ] INFO  SpringBootTestContextBootstrapper  - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@e350b40, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@41a0aa7d, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@2794eab6, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@6340e5f0, org.springframework.test.context.support.DirtiesContextTestExecutionListener@45099dd3, org.springframework.test.context.transaction.TransactionalTestExecutionListener@13e344d, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@1ffaf86, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@6574a52c, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@6c1a5b54, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@1c7696c6, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@60099951, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@20140db9]
+18-04-18.15:54:58.171 [main            ] INFO  TestUserService         - Starting TestUserService on ZB-MP120GHR with PID 5356 (started by zhaochen5 in D:\jcode\springboot-integration\web)
+18-04-18.15:54:58.173 [main            ] INFO  TestUserService         - No active profile set, falling back to default profiles: default
+18-04-18.15:54:58.225 [main            ] INFO  GenericReactiveWebApplicationContext  - Refreshing org.springframework.boot.web.reactive.context.GenericReactiveWebApplicationContext@95e33cc: startup date [Wed Apr 18 15:54:58 CST 2018]; root of context hierarchy
+18-04-18.15:54:59.134 [main            ] INFO  RepositoryConfigurationDelegate  - Multiple Spring Data modules found, entering strict repository configuration mode!
+18-04-18.15:54:59.794 [main            ] INFO  PostProcessorRegistrationDelegate$BeanPostProcessorChecker  - Bean 'org.springframework.amqp.rabbit.annotation.RabbitBootstrapConfiguration' of type [org.springframework.amqp.rabbit.annotation.RabbitBootstrapConfiguration$$EnhancerBySpringCGLIB$$ad4032bb] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+18-04-18.15:55:01.444 [main            ] INFO  RequestMappingHandlerMapping  - Mapped "{[/list],methods=[GET]}" onto public java.lang.Object org.flow.controller.UserController.list()
+18-04-18.15:55:01.487 [main            ] INFO  SimpleUrlHandlerMapping  - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.reactive.resource.ResourceWebHandler]
+18-04-18.15:55:01.487 [main            ] INFO  SimpleUrlHandlerMapping  - Mapped URL path [/**] onto handler of type [class org.springframework.web.reactive.resource.ResourceWebHandler]
+18-04-18.15:55:01.544 [main            ] INFO  ControllerMethodResolver  - Looking for @ControllerAdvice: org.springframework.boot.web.reactive.context.GenericReactiveWebApplicationContext@95e33cc: startup date [Wed Apr 18 15:54:58 CST 2018]; root of context hierarchy
+18-04-18.15:55:03.257 [main            ] INFO  DefaultLifecycleProcessor  - Starting beans in phase 2147483647
+18-04-18.15:55:03.275 [main            ] INFO  TestUserService         - Started TestUserService in 6.019 seconds (JVM running for 9.134)
+18-04-18.15:55:03.883 [main            ] INFO  DruidDataSource         - {dataSource-1} inited
+18-04-18.15:55:03.942 [main            ] DEBUG selectAll               - ==>  Preparing: select id, organization_id, username, password, salt, role_ids, locked, create_time, update_time from sys_user 
+18-04-18.15:55:04.199 [main            ] DEBUG Statement               - {conn-10001, pstmt-20000} created. select id, organization_id, username, password, salt, role_ids, locked, create_time, 
+    update_time
+    from sys_user
+18-04-18.15:55:04.221 [main            ] DEBUG selectAll               - ==> Parameters: 
+18-04-18.15:55:04.225 [main            ] DEBUG Statement               - {conn-10001, pstmt-20000} Parameters : []
+18-04-18.15:55:04.225 [main            ] DEBUG Statement               - {conn-10001, pstmt-20000} Types : []
+18-04-18.15:55:04.228 [main            ] DEBUG Statement               - {conn-10001, pstmt-20000} executed. 5.536361 millis. select id, organization_id, username, password, salt, role_ids, locked, create_time, 
+    update_time
+    from sys_user
+18-04-18.15:55:04.254 [main            ] TRACE selectAll               - <==    Columns: id, organization_id, username, password, salt, role_ids, locked, create_time, update_time
+18-04-18.15:55:04.255 [main            ] TRACE selectAll               - <==        Row: 1, 1, admin, d3c59d25033dbf980d29554025c23a75, 8d78869f470951332959580424d4bf4f, 1, 0, 2018-04-17 13:09:11, 2018-04-17 13:09:11
+18-04-18.15:55:04.260 [main            ] DEBUG selectAll               - <==      Total: 1
+18-04-18.15:55:04.261 [main            ] DEBUG Statement               - {conn-10001, pstmt-20000} clearParameters. 
+18-04-18.15:55:04.272 [Thread-2        ] INFO  GenericReactiveWebApplicationContext  - Closing org.springframework.boot.web.reactive.context.GenericReactiveWebApplicationContext@95e33cc: startup date [Wed Apr 18 15:54:58 CST 2018]; root of context hierarchy
+18-04-18.15:55:04.275 [Thread-2        ] INFO  DefaultLifecycleProcessor  - Stopping beans in phase 2147483647
+18-04-18.15:55:04.276 [Thread-2        ] INFO  DefaultLifecycleProcessor  - Stopping beans in phase 0
+18-04-18.15:55:04.306 [Thread-2        ] DEBUG Statement               - {conn-10001, pstmt-20000} closed
+18-04-18.15:55:04.311 [Thread-2        ] INFO  DruidDataSource         - {dataSource-1} closed
+18-04-18.15:56:37.139 [main            ] INFO  SpringBootMain          - Starting SpringBootMain on ZB-MP120GHR with PID 7828 (D:\jcode\springboot-integration\web\target\classes started by zhaochen5 in D:\jcode\springboot-integration)
+18-04-18.15:56:37.143 [main            ] INFO  SpringBootMain          - No active profile set, falling back to default profiles: default
+18-04-18.15:56:37.285 [main            ] INFO  AnnotationConfigReactiveWebServerApplicationContext  - Refreshing org.springframework.boot.web.reactive.context.AnnotationConfigReactiveWebServerApplicationContext@305b7c14: startup date [Wed Apr 18 15:56:37 CST 2018]; root of context hierarchy
+18-04-18.15:56:38.181 [main            ] INFO  RepositoryConfigurationDelegate  - Multiple Spring Data modules found, entering strict repository configuration mode!
+18-04-18.15:56:38.549 [main            ] INFO  PostProcessorRegistrationDelegate$BeanPostProcessorChecker  - Bean 'org.springframework.amqp.rabbit.annotation.RabbitBootstrapConfiguration' of type [org.springframework.amqp.rabbit.annotation.RabbitBootstrapConfiguration$$EnhancerBySpringCGLIB$$863af2e6] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+18-04-18.15:56:38.932 [main            ] INFO  RequestMappingHandlerMapping  - Mapped "{[/list],methods=[GET]}" onto public java.lang.Object org.flow.controller.UserController.list()
+18-04-18.15:56:38.986 [main            ] INFO  SimpleUrlHandlerMapping  - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.reactive.resource.ResourceWebHandler]
+18-04-18.15:56:38.986 [main            ] INFO  SimpleUrlHandlerMapping  - Mapped URL path [/**] onto handler of type [class org.springframework.web.reactive.resource.ResourceWebHandler]
+18-04-18.15:56:39.034 [main            ] INFO  ControllerMethodResolver  - Looking for @ControllerAdvice: org.springframework.boot.web.reactive.context.AnnotationConfigReactiveWebServerApplicationContext@305b7c14: startup date [Wed Apr 18 15:56:37 CST 2018]; root of context hierarchy
+18-04-18.15:56:40.472 [main            ] INFO  AnnotationMBeanExporter  - Registering beans for JMX exposure on startup
+18-04-18.15:56:40.473 [main            ] INFO  AnnotationMBeanExporter  - Bean with name 'druidDataSource' has been autodetected for JMX exposure
+18-04-18.15:56:40.480 [main            ] INFO  AnnotationMBeanExporter  - Bean with name 'rabbitConnectionFactory' has been autodetected for JMX exposure
+18-04-18.15:56:40.483 [main            ] INFO  AnnotationMBeanExporter  - Located managed bean 'rabbitConnectionFactory': registering with JMX server as MBean [org.springframework.amqp.rabbit.connection:name=rabbitConnectionFactory,type=CachingConnectionFactory]
+18-04-18.15:56:40.501 [main            ] INFO  AnnotationMBeanExporter  - Located MBean 'druidDataSource': registering with JMX server as MBean [com.alibaba.druid.pool:name=druidDataSource,type=DruidDataSource]
+18-04-18.15:56:40.506 [main            ] INFO  DefaultLifecycleProcessor  - Starting beans in phase 2147483647
+18-04-18.15:56:40.919 [reactor-http-nio-1] INFO  BlockingNettyContext    - Started HttpServer on /0:0:0:0:0:0:0:0:8080
+18-04-18.15:56:40.921 [main            ] INFO  NettyWebServer          - Netty started on port(s): 8080
+18-04-18.15:56:40.927 [main            ] INFO  SpringBootMain          - Started SpringBootMain in 4.7 seconds (JVM running for 6.436)
+18-04-18.15:56:48.448 [reactor-http-nio-2] WARN  DefaultErrorWebExceptionHandler  - Failed to handle request [GET http://localhost:8080/druid/]: Response status 404
+18-04-18.15:56:52.682 [reactor-http-nio-4] INFO  DruidDataSource         - {dataSource-1} inited
+18-04-18.15:56:52.704 [reactor-http-nio-4] DEBUG selectAll               - ==>  Preparing: select id, organization_id, username, password, salt, role_ids, locked, create_time, update_time from sys_user 
+18-04-18.15:56:52.816 [reactor-http-nio-4] DEBUG Statement               - {conn-10001, pstmt-20000} created. select id, organization_id, username, password, salt, role_ids, locked, create_time, 
+    update_time
+    from sys_user
+18-04-18.15:56:52.827 [reactor-http-nio-4] DEBUG selectAll               - ==> Parameters: 
+18-04-18.15:56:52.832 [reactor-http-nio-4] DEBUG Statement               - {conn-10001, pstmt-20000} Parameters : []
+18-04-18.15:56:52.832 [reactor-http-nio-4] DEBUG Statement               - {conn-10001, pstmt-20000} Types : []
+18-04-18.15:56:52.834 [reactor-http-nio-4] DEBUG Statement               - {conn-10001, pstmt-20000} executed. 5.575705 millis. select id, organization_id, username, password, salt, role_ids, locked, create_time, 
+    update_time
+    from sys_user
+18-04-18.15:56:52.846 [reactor-http-nio-4] TRACE selectAll               - <==    Columns: id, organization_id, username, password, salt, role_ids, locked, create_time, update_time
+18-04-18.15:56:52.847 [reactor-http-nio-4] TRACE selectAll               - <==        Row: 1, 1, admin, d3c59d25033dbf980d29554025c23a75, 8d78869f470951332959580424d4bf4f, 1, 0, 2018-04-17 13:09:11, 2018-04-17 13:09:11
+18-04-18.15:56:52.849 [reactor-http-nio-4] DEBUG selectAll               - <==      Total: 1
+18-04-18.15:56:52.850 [reactor-http-nio-4] DEBUG Statement               - {conn-10001, pstmt-20000} clearParameters. 
+18-04-18.15:56:55.862 [reactor-http-nio-4] WARN  DefaultErrorWebExceptionHandler  - Failed to handle request [GET http://localhost:8080/druid/]: Response status 404
+18-04-18.15:59:58.832 [main            ] INFO  SpringBootMain          - Starting SpringBootMain on ZB-MP120GHR with PID 8324 (D:\jcode\springboot-integration\web\target\classes started by zhaochen5 in D:\jcode\springboot-integration)
+18-04-18.15:59:58.849 [main            ] INFO  SpringBootMain          - No active profile set, falling back to default profiles: default
+18-04-18.15:59:58.994 [main            ] INFO  AnnotationConfigReactiveWebServerApplicationContext  - Refreshing org.springframework.boot.web.reactive.context.AnnotationConfigReactiveWebServerApplicationContext@22fcf7ab: startup date [Wed Apr 18 15:59:58 CST 2018]; root of context hierarchy
+18-04-18.15:59:59.559 [main            ] INFO  RepositoryConfigurationDelegate  - Multiple Spring Data modules found, entering strict repository configuration mode!
+18-04-18.15:59:59.867 [main            ] INFO  PostProcessorRegistrationDelegate$BeanPostProcessorChecker  - Bean 'org.springframework.amqp.rabbit.annotation.RabbitBootstrapConfiguration' of type [org.springframework.amqp.rabbit.annotation.RabbitBootstrapConfiguration$$EnhancerBySpringCGLIB$$c758b444] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+18-04-18.16:00:00.237 [main            ] INFO  RequestMappingHandlerMapping  - Mapped "{[/list],methods=[GET]}" onto public java.lang.Object org.flow.controller.UserController.list()
+18-04-18.16:00:00.287 [main            ] INFO  SimpleUrlHandlerMapping  - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.reactive.resource.ResourceWebHandler]
+18-04-18.16:00:00.287 [main            ] INFO  SimpleUrlHandlerMapping  - Mapped URL path [/**] onto handler of type [class org.springframework.web.reactive.resource.ResourceWebHandler]
+18-04-18.16:00:00.338 [main            ] INFO  ControllerMethodResolver  - Looking for @ControllerAdvice: org.springframework.boot.web.reactive.context.AnnotationConfigReactiveWebServerApplicationContext@22fcf7ab: startup date [Wed Apr 18 15:59:58 CST 2018]; root of context hierarchy
+18-04-18.16:00:00.961 [main            ] INFO  DruidConfiguration      - init Druid Servlet Configuration 
+18-04-18.16:00:01.748 [main            ] INFO  AnnotationMBeanExporter  - Registering beans for JMX exposure on startup
+18-04-18.16:00:01.749 [main            ] INFO  AnnotationMBeanExporter  - Bean with name 'dataSource' has been autodetected for JMX exposure
+18-04-18.16:00:01.756 [main            ] INFO  AnnotationMBeanExporter  - Bean with name 'rabbitConnectionFactory' has been autodetected for JMX exposure
+18-04-18.16:00:01.759 [main            ] INFO  AnnotationMBeanExporter  - Located MBean 'dataSource': registering with JMX server as MBean [com.alibaba.druid.pool:name=dataSource,type=DruidDataSource]
+18-04-18.16:00:01.761 [main            ] INFO  AnnotationMBeanExporter  - Located managed bean 'rabbitConnectionFactory': registering with JMX server as MBean [org.springframework.amqp.rabbit.connection:name=rabbitConnectionFactory,type=CachingConnectionFactory]
+18-04-18.16:00:01.784 [main            ] INFO  DefaultLifecycleProcessor  - Starting beans in phase 2147483647
+18-04-18.16:00:02.158 [reactor-http-nio-1] INFO  BlockingNettyContext    - Started HttpServer on /0:0:0:0:0:0:0:0:8080
+18-04-18.16:00:02.159 [main            ] INFO  NettyWebServer          - Netty started on port(s): 8080
+18-04-18.16:00:02.165 [main            ] INFO  SpringBootMain          - Started SpringBootMain in 4.241 seconds (JVM running for 6.993)
+18-04-18.16:00:17.108 [reactor-http-nio-2] INFO  DruidDataSource         - {dataSource-1} inited
+18-04-18.16:00:17.132 [reactor-http-nio-2] DEBUG selectAll               - ==>  Preparing: select id, organization_id, username, password, salt, role_ids, locked, create_time, update_time from sys_user 
+18-04-18.16:00:17.239 [reactor-http-nio-2] DEBUG Statement               - {conn-10001, pstmt-20000} created. select id, organization_id, username, password, salt, role_ids, locked, create_time, 
+    update_time
+    from sys_user
+18-04-18.16:00:17.259 [reactor-http-nio-2] DEBUG selectAll               - ==> Parameters: 
+18-04-18.16:00:17.265 [reactor-http-nio-2] DEBUG Statement               - {conn-10001, pstmt-20000} Parameters : []
+18-04-18.16:00:17.265 [reactor-http-nio-2] DEBUG Statement               - {conn-10001, pstmt-20000} Types : []
+18-04-18.16:00:17.268 [reactor-http-nio-2] DEBUG Statement               - {conn-10001, pstmt-20000} executed. 7.118668 millis. select id, organization_id, username, password, salt, role_ids, locked, create_time, 
+    update_time
+    from sys_user
+18-04-18.16:00:17.284 [reactor-http-nio-2] TRACE selectAll               - <==    Columns: id, organization_id, username, password, salt, role_ids, locked, create_time, update_time
+18-04-18.16:00:17.284 [reactor-http-nio-2] TRACE selectAll               - <==        Row: 1, 1, admin, d3c59d25033dbf980d29554025c23a75, 8d78869f470951332959580424d4bf4f, 1, 0, 2018-04-17 13:09:11, 2018-04-17 13:09:11
+18-04-18.16:00:17.287 [reactor-http-nio-2] DEBUG selectAll               - <==      Total: 1
+18-04-18.16:00:17.288 [reactor-http-nio-2] DEBUG Statement               - {conn-10001, pstmt-20000} clearParameters. 
+18-04-18.16:00:24.044 [reactor-http-nio-4] WARN  DefaultErrorWebExceptionHandler  - Failed to handle request [GET http://localhost:8080/druid]: Response status 404
+18-04-18.16:00:58.643 [reactor-http-nio-2] WARN  DefaultErrorWebExceptionHandler  - Failed to handle request [GET http://localhost:8080/druid/]: Response status 404
+18-04-18.16:03:41.890 [reactor-http-nio-4] WARN  DefaultErrorWebExceptionHandler  - Failed to handle request [GET http://localhost:8080/druid/login]: Response status 404
+18-04-18.16:03:46.306 [reactor-http-nio-4] WARN  DefaultErrorWebExceptionHandler  - Failed to handle request [GET http://localhost:8080/druid/login.html]: Response status 404
+18-04-18.16:04:53.539 [reactor-http-nio-2] WARN  DefaultErrorWebExceptionHandler  - Failed to handle request [GET http://localhost:8080/druid/login.html]: Response status 404
+18-04-18.16:10:32.528 [main            ] INFO  SpringBootMain          - Starting SpringBootMain on ZB-MP120GHR with PID 12364 (D:\jcode\springboot-integration\web\target\classes started by zhaochen5 in D:\jcode\springboot-integration)
+18-04-18.16:10:32.531 [main            ] INFO  SpringBootMain          - No active profile set, falling back to default profiles: default
+18-04-18.16:10:32.576 [main            ] INFO  AnnotationConfigReactiveWebServerApplicationContext  - Refreshing org.springframework.boot.web.reactive.context.AnnotationConfigReactiveWebServerApplicationContext@63475ace: startup date [Wed Apr 18 16:10:32 CST 2018]; root of context hierarchy
+18-04-18.16:10:33.139 [main            ] INFO  RepositoryConfigurationDelegate  - Multiple Spring Data modules found, entering strict repository configuration mode!
+18-04-18.16:10:33.444 [main            ] INFO  PostProcessorRegistrationDelegate$BeanPostProcessorChecker  - Bean 'org.springframework.amqp.rabbit.annotation.RabbitBootstrapConfiguration' of type [org.springframework.amqp.rabbit.annotation.RabbitBootstrapConfiguration$$EnhancerBySpringCGLIB$$b052bb6f] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+18-04-18.16:10:33.907 [main            ] INFO  RequestMappingHandlerMapping  - Mapped "{[/list],methods=[GET]}" onto public java.lang.Object org.flow.controller.UserController.list()
+18-04-18.16:10:34.010 [main            ] INFO  SimpleUrlHandlerMapping  - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.reactive.resource.ResourceWebHandler]
+18-04-18.16:10:34.010 [main            ] INFO  SimpleUrlHandlerMapping  - Mapped URL path [/**] onto handler of type [class org.springframework.web.reactive.resource.ResourceWebHandler]
+18-04-18.16:10:34.104 [main            ] INFO  ControllerMethodResolver  - Looking for @ControllerAdvice: org.springframework.boot.web.reactive.context.AnnotationConfigReactiveWebServerApplicationContext@63475ace: startup date [Wed Apr 18 16:10:32 CST 2018]; root of context hierarchy
+18-04-18.16:10:34.830 [main            ] INFO  DruidConfiguration      - init Druid Servlet Configuration 
+18-04-18.16:10:35.686 [main            ] INFO  AnnotationMBeanExporter  - Registering beans for JMX exposure on startup
+18-04-18.16:10:35.686 [main            ] INFO  AnnotationMBeanExporter  - Bean with name 'dataSource' has been autodetected for JMX exposure
+18-04-18.16:10:35.693 [main            ] INFO  AnnotationMBeanExporter  - Bean with name 'rabbitConnectionFactory' has been autodetected for JMX exposure
+18-04-18.16:10:35.697 [main            ] INFO  AnnotationMBeanExporter  - Located MBean 'dataSource': registering with JMX server as MBean [com.alibaba.druid.pool:name=dataSource,type=DruidDataSource]
+18-04-18.16:10:35.699 [main            ] INFO  AnnotationMBeanExporter  - Located managed bean 'rabbitConnectionFactory': registering with JMX server as MBean [org.springframework.amqp.rabbit.connection:name=rabbitConnectionFactory,type=CachingConnectionFactory]
+18-04-18.16:10:35.722 [main            ] INFO  DefaultLifecycleProcessor  - Starting beans in phase 2147483647
+18-04-18.16:10:36.152 [reactor-http-nio-1] INFO  BlockingNettyContext    - Started HttpServer on /0:0:0:0:0:0:0:0:8080
+18-04-18.16:10:36.154 [main            ] INFO  NettyWebServer          - Netty started on port(s): 8080
+18-04-18.16:10:36.161 [main            ] INFO  SpringBootMain          - Started SpringBootMain in 4.372 seconds (JVM running for 7.133)
+18-04-18.16:14:40.015 [reactor-http-nio-2] WARN  DefaultErrorWebExceptionHandler  - Failed to handle request [GET http://localhost:8080/druid/login.html]: Response status 404
+18-04-18.16:18:48.506 [main            ] INFO  SpringBootMain          - Starting SpringBootMain on ZB-MP120GHR with PID 12988 (D:\jcode\springboot-integration\web\target\classes started by zhaochen5 in D:\jcode\springboot-integration)
+18-04-18.16:18:48.510 [main            ] INFO  SpringBootMain          - No active profile set, falling back to default profiles: default
+18-04-18.16:18:48.565 [main            ] INFO  AnnotationConfigReactiveWebServerApplicationContext  - Refreshing org.springframework.boot.web.reactive.context.AnnotationConfigReactiveWebServerApplicationContext@4c309d4d: startup date [Wed Apr 18 16:18:48 CST 2018]; root of context hierarchy
+18-04-18.16:18:49.154 [main            ] INFO  RepositoryConfigurationDelegate  - Multiple Spring Data modules found, entering strict repository configuration mode!
+18-04-18.16:18:49.516 [main            ] INFO  PostProcessorRegistrationDelegate$BeanPostProcessorChecker  - Bean 'org.springframework.amqp.rabbit.annotation.RabbitBootstrapConfiguration' of type [org.springframework.amqp.rabbit.annotation.RabbitBootstrapConfiguration$$EnhancerBySpringCGLIB$$b1ef33bf] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+18-04-18.16:18:49.864 [main            ] INFO  RequestMappingHandlerMapping  - Mapped "{[/list],methods=[GET]}" onto public java.lang.Object org.flow.controller.UserController.list()
+18-04-18.16:18:49.918 [main            ] INFO  SimpleUrlHandlerMapping  - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.reactive.resource.ResourceWebHandler]
+18-04-18.16:18:49.918 [main            ] INFO  SimpleUrlHandlerMapping  - Mapped URL path [/**] onto handler of type [class org.springframework.web.reactive.resource.ResourceWebHandler]
+18-04-18.16:18:49.977 [main            ] INFO  ControllerMethodResolver  - Looking for @ControllerAdvice: org.springframework.boot.web.reactive.context.AnnotationConfigReactiveWebServerApplicationContext@4c309d4d: startup date [Wed Apr 18 16:18:48 CST 2018]; root of context hierarchy
+18-04-18.16:18:50.535 [main            ] INFO  DruidConfiguration      - init Druid Servlet Configuration 
+18-04-18.16:18:51.328 [main            ] INFO  AnnotationMBeanExporter  - Registering beans for JMX exposure on startup
+18-04-18.16:18:51.328 [main            ] INFO  AnnotationMBeanExporter  - Bean with name 'dataSource' has been autodetected for JMX exposure
+18-04-18.16:18:51.336 [main            ] INFO  AnnotationMBeanExporter  - Bean with name 'rabbitConnectionFactory' has been autodetected for JMX exposure
+18-04-18.16:18:51.338 [main            ] INFO  AnnotationMBeanExporter  - Located MBean 'dataSource': registering with JMX server as MBean [com.alibaba.druid.pool:name=dataSource,type=DruidDataSource]
+18-04-18.16:18:51.340 [main            ] INFO  AnnotationMBeanExporter  - Located managed bean 'rabbitConnectionFactory': registering with JMX server as MBean [org.springframework.amqp.rabbit.connection:name=rabbitConnectionFactory,type=CachingConnectionFactory]
+18-04-18.16:18:51.361 [main            ] INFO  DefaultLifecycleProcessor  - Starting beans in phase 2147483647
+18-04-18.16:18:51.727 [reactor-http-nio-1] INFO  BlockingNettyContext    - Started HttpServer on /0:0:0:0:0:0:0:0:8080
+18-04-18.16:18:51.728 [main            ] INFO  NettyWebServer          - Netty started on port(s): 8080
+18-04-18.16:18:51.732 [main            ] INFO  SpringBootMain          - Started SpringBootMain in 3.98 seconds (JVM running for 6.327)
+18-04-18.16:19:13.290 [reactor-http-nio-2] INFO  DruidDataSource         - {dataSource-1} inited
+18-04-18.16:19:13.313 [reactor-http-nio-2] DEBUG selectAll               - ==>  Preparing: select id, organization_id, username, password, salt, role_ids, locked, create_time, update_time from sys_user 
+18-04-18.16:19:13.409 [reactor-http-nio-2] DEBUG Statement               - {conn-10001, pstmt-20000} created. select id, organization_id, username, password, salt, role_ids, locked, create_time, 
+    update_time
+    from sys_user
+18-04-18.16:19:13.421 [reactor-http-nio-2] DEBUG selectAll               - ==> Parameters: 
+18-04-18.16:19:13.426 [reactor-http-nio-2] DEBUG Statement               - {conn-10001, pstmt-20000} Parameters : []
+18-04-18.16:19:13.426 [reactor-http-nio-2] DEBUG Statement               - {conn-10001, pstmt-20000} Types : []
+18-04-18.16:19:13.427 [reactor-http-nio-2] DEBUG Statement               - {conn-10001, pstmt-20000} executed. 4.732379 millis. select id, organization_id, username, password, salt, role_ids, locked, create_time, 
+    update_time
+    from sys_user
+18-04-18.16:19:13.442 [reactor-http-nio-2] TRACE selectAll               - <==    Columns: id, organization_id, username, password, salt, role_ids, locked, create_time, update_time
+18-04-18.16:19:13.443 [reactor-http-nio-2] TRACE selectAll               - <==        Row: 1, 1, admin, d3c59d25033dbf980d29554025c23a75, 8d78869f470951332959580424d4bf4f, 1, 0, 2018-04-17 13:09:11, 2018-04-17 13:09:11
+18-04-18.16:19:13.446 [reactor-http-nio-2] DEBUG selectAll               - <==      Total: 1
+18-04-18.16:19:13.446 [reactor-http-nio-2] DEBUG Statement               - {conn-10001, pstmt-20000} clearParameters. 
+18-04-18.16:19:17.715 [reactor-http-nio-2] WARN  DefaultErrorWebExceptionHandler  - Failed to handle request [GET http://localhost:8080/druid]: Response status 404
+18-04-18.16:29:44.288 [reactor-http-nio-4] WARN  DefaultErrorWebExceptionHandler  - Failed to handle request [GET http://127.0.0.1:8080/druid]: Response status 404
+18-04-18.16:29:49.924 [reactor-http-nio-4] WARN  DefaultErrorWebExceptionHandler  - Failed to handle request [GET http://127.0.0.1:8080/druid/login]: Response status 404
+18-04-18.16:29:56.370 [reactor-http-nio-4] WARN  DefaultErrorWebExceptionHandler  - Failed to handle request [GET http://127.0.0.1:8080/druid/login.html]: Response status 404
+18-04-18.16:33:33.088 [main            ] INFO  SpringBootMain          - Starting SpringBootMain on ZB-MP120GHR with PID 11268 (D:\jcode\springboot-integration\web\target\classes started by zhaochen5 in D:\jcode\springboot-integration)
+18-04-18.16:33:33.093 [main            ] INFO  SpringBootMain          - No active profile set, falling back to default profiles: default
+18-04-18.16:33:33.172 [main            ] INFO  AnnotationConfigReactiveWebServerApplicationContext  - Refreshing org.springframework.boot.web.reactive.context.AnnotationConfigReactiveWebServerApplicationContext@4009e306: startup date [Wed Apr 18 16:33:33 CST 2018]; root of context hierarchy
+18-04-18.16:33:33.889 [main            ] INFO  RepositoryConfigurationDelegate  - Multiple Spring Data modules found, entering strict repository configuration mode!
+18-04-18.16:33:34.256 [main            ] INFO  PostProcessorRegistrationDelegate$BeanPostProcessorChecker  - Bean 'org.springframework.amqp.rabbit.annotation.RabbitBootstrapConfiguration' of type [org.springframework.amqp.rabbit.annotation.RabbitBootstrapConfiguration$$EnhancerBySpringCGLIB$$c758b444] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+18-04-18.16:33:34.685 [main            ] INFO  RequestMappingHandlerMapping  - Mapped "{[/list],methods=[GET]}" onto public java.lang.Object org.flow.controller.UserController.list()
+18-04-18.16:33:34.739 [main            ] INFO  SimpleUrlHandlerMapping  - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.reactive.resource.ResourceWebHandler]
+18-04-18.16:33:34.740 [main            ] INFO  SimpleUrlHandlerMapping  - Mapped URL path [/**] onto handler of type [class org.springframework.web.reactive.resource.ResourceWebHandler]
+18-04-18.16:33:34.796 [main            ] INFO  ControllerMethodResolver  - Looking for @ControllerAdvice: org.springframework.boot.web.reactive.context.AnnotationConfigReactiveWebServerApplicationContext@4009e306: startup date [Wed Apr 18 16:33:33 CST 2018]; root of context hierarchy
+18-04-18.16:33:35.009 [main            ] WARN  AnnotationConfigReactiveWebServerApplicationContext  - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'userController': Injection of resource dependencies failed; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'userServiceImpl': Injection of resource dependencies failed; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'userMapper' defined in file [D:\jcode\springboot-integration\dao\target\classes\org\flow\dao\mapper\UserMapper.class]: Unsatisfied dependency expressed through bean property 'sqlSessionFactory'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'sqlSessionFactory' defined in class path resource [org/mybatis/spring/boot/autoconfigure/MybatisAutoConfiguration.class]: Unsatisfied dependency expressed through method 'sqlSessionFactory' parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'druidDBConfig': Injection of autowired dependencies failed; nested exception is java.lang.IllegalArgumentException: Could not resolve placeholder 'spring.datasource.driverClassName' in value "${spring.datasource.driverClassName}"
+18-04-18.16:33:35.017 [main            ] INFO  ConditionEvaluationReportLoggingListener  - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+18-04-18.16:33:35.026 [main            ] ERROR SpringApplication       - Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'userController': Injection of resource dependencies failed; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'userServiceImpl': Injection of resource dependencies failed; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'userMapper' defined in file [D:\jcode\springboot-integration\dao\target\classes\org\flow\dao\mapper\UserMapper.class]: Unsatisfied dependency expressed through bean property 'sqlSessionFactory'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'sqlSessionFactory' defined in class path resource [org/mybatis/spring/boot/autoconfigure/MybatisAutoConfiguration.class]: Unsatisfied dependency expressed through method 'sqlSessionFactory' parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'druidDBConfig': Injection of autowired dependencies failed; nested exception is java.lang.IllegalArgumentException: Could not resolve placeholder 'spring.datasource.driverClassName' in value "${spring.datasource.driverClassName}"
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.postProcessPropertyValues(CommonAnnotationBeanPostProcessor.java:321)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1344)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:578)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:501)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:317)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:228)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:315)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:760)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:869)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:550)
+	at org.springframework.boot.web.reactive.context.ReactiveWebServerApplicationContext.refresh(ReactiveWebServerApplicationContext.java:61)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:759)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:395)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:327)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1255)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1243)
+	at org.flow.SpringBootMain.main(SpringBootMain.java:13)
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'userServiceImpl': Injection of resource dependencies failed; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'userMapper' defined in file [D:\jcode\springboot-integration\dao\target\classes\org\flow\dao\mapper\UserMapper.class]: Unsatisfied dependency expressed through bean property 'sqlSessionFactory'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'sqlSessionFactory' defined in class path resource [org/mybatis/spring/boot/autoconfigure/MybatisAutoConfiguration.class]: Unsatisfied dependency expressed through method 'sqlSessionFactory' parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'druidDBConfig': Injection of autowired dependencies failed; nested exception is java.lang.IllegalArgumentException: Could not resolve placeholder 'spring.datasource.driverClassName' in value "${spring.datasource.driverClassName}"
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.postProcessPropertyValues(CommonAnnotationBeanPostProcessor.java:321)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1344)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:578)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:501)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:317)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:228)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:315)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:251)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1138)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1065)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.autowireResource(CommonAnnotationBeanPostProcessor.java:506)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.getResource(CommonAnnotationBeanPostProcessor.java:484)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor$ResourceElement.getResourceToInject(CommonAnnotationBeanPostProcessor.java:618)
+	at org.springframework.beans.factory.annotation.InjectionMetadata$InjectedElement.inject(InjectionMetadata.java:177)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:91)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.postProcessPropertyValues(CommonAnnotationBeanPostProcessor.java:318)
+	... 17 common frames omitted
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'userMapper' defined in file [D:\jcode\springboot-integration\dao\target\classes\org\flow\dao\mapper\UserMapper.class]: Unsatisfied dependency expressed through bean property 'sqlSessionFactory'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'sqlSessionFactory' defined in class path resource [org/mybatis/spring/boot/autoconfigure/MybatisAutoConfiguration.class]: Unsatisfied dependency expressed through method 'sqlSessionFactory' parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'druidDBConfig': Injection of autowired dependencies failed; nested exception is java.lang.IllegalArgumentException: Could not resolve placeholder 'spring.datasource.driverClassName' in value "${spring.datasource.driverClassName}"
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireByType(AbstractAutowireCapableBeanFactory.java:1439)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1326)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:578)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:501)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:317)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:228)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:315)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:204)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.autowireResource(CommonAnnotationBeanPostProcessor.java:513)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.getResource(CommonAnnotationBeanPostProcessor.java:484)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor$ResourceElement.getResourceToInject(CommonAnnotationBeanPostProcessor.java:618)
+	at org.springframework.beans.factory.annotation.InjectionMetadata$InjectedElement.inject(InjectionMetadata.java:177)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:91)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.postProcessPropertyValues(CommonAnnotationBeanPostProcessor.java:318)
+	... 33 common frames omitted
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'sqlSessionFactory' defined in class path resource [org/mybatis/spring/boot/autoconfigure/MybatisAutoConfiguration.class]: Unsatisfied dependency expressed through method 'sqlSessionFactory' parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'druidDBConfig': Injection of autowired dependencies failed; nested exception is java.lang.IllegalArgumentException: Could not resolve placeholder 'spring.datasource.driverClassName' in value "${spring.datasource.driverClassName}"
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:729)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:470)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1250)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1099)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:541)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:501)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:317)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:228)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:315)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:251)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1138)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1065)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireByType(AbstractAutowireCapableBeanFactory.java:1424)
+	... 46 common frames omitted
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'druidDBConfig': Injection of autowired dependencies failed; nested exception is java.lang.IllegalArgumentException: Could not resolve placeholder 'spring.datasource.driverClassName' in value "${spring.datasource.driverClassName}"
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessPropertyValues(AutowiredAnnotationBeanPostProcessor.java:379)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1344)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:578)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:501)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:317)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:228)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:315)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:368)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1250)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1099)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:541)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:501)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:317)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:228)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:315)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:251)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1138)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1065)
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:815)
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:721)
+	... 59 common frames omitted
+Caused by: java.lang.IllegalArgumentException: Could not resolve placeholder 'spring.datasource.driverClassName' in value "${spring.datasource.driverClassName}"
+	at org.springframework.util.PropertyPlaceholderHelper.parseStringValue(PropertyPlaceholderHelper.java:172)
+	at org.springframework.util.PropertyPlaceholderHelper.replacePlaceholders(PropertyPlaceholderHelper.java:124)
+	at org.springframework.core.env.AbstractPropertyResolver.doResolvePlaceholders(AbstractPropertyResolver.java:237)
+	at org.springframework.core.env.AbstractPropertyResolver.resolveRequiredPlaceholders(AbstractPropertyResolver.java:211)
+	at org.springframework.context.support.PropertySourcesPlaceholderConfigurer.lambda$processProperties$0(PropertySourcesPlaceholderConfigurer.java:175)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.resolveEmbeddedValue(AbstractBeanFactory.java:839)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1086)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1065)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:584)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:91)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessPropertyValues(AutowiredAnnotationBeanPostProcessor.java:373)
+	... 80 common frames omitted
+18-04-18.16:34:53.673 [main            ] INFO  SpringBootMain          - Starting SpringBootMain on ZB-MP120GHR with PID 13288 (D:\jcode\springboot-integration\web\target\classes started by zhaochen5 in D:\jcode\springboot-integration)
+18-04-18.16:34:53.681 [main            ] INFO  SpringBootMain          - No active profile set, falling back to default profiles: default
+18-04-18.16:34:53.817 [main            ] INFO  AnnotationConfigReactiveWebServerApplicationContext  - Refreshing org.springframework.boot.web.reactive.context.AnnotationConfigReactiveWebServerApplicationContext@22fcf7ab: startup date [Wed Apr 18 16:34:53 CST 2018]; root of context hierarchy
+18-04-18.16:34:54.482 [main            ] INFO  RepositoryConfigurationDelegate  - Multiple Spring Data modules found, entering strict repository configuration mode!
+18-04-18.16:34:54.779 [main            ] INFO  PostProcessorRegistrationDelegate$BeanPostProcessorChecker  - Bean 'org.springframework.amqp.rabbit.annotation.RabbitBootstrapConfiguration' of type [org.springframework.amqp.rabbit.annotation.RabbitBootstrapConfiguration$$EnhancerBySpringCGLIB$$9e3d3fff] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+18-04-18.16:34:55.128 [main            ] INFO  RequestMappingHandlerMapping  - Mapped "{[/list],methods=[GET]}" onto public java.lang.Object org.flow.controller.UserController.list()
+18-04-18.16:34:55.188 [main            ] INFO  SimpleUrlHandlerMapping  - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.reactive.resource.ResourceWebHandler]
+18-04-18.16:34:55.188 [main            ] INFO  SimpleUrlHandlerMapping  - Mapped URL path [/**] onto handler of type [class org.springframework.web.reactive.resource.ResourceWebHandler]
+18-04-18.16:34:55.254 [main            ] INFO  ControllerMethodResolver  - Looking for @ControllerAdvice: org.springframework.boot.web.reactive.context.AnnotationConfigReactiveWebServerApplicationContext@22fcf7ab: startup date [Wed Apr 18 16:34:53 CST 2018]; root of context hierarchy
+18-04-18.16:34:56.661 [main            ] INFO  AnnotationMBeanExporter  - Registering beans for JMX exposure on startup
+18-04-18.16:34:56.662 [main            ] INFO  AnnotationMBeanExporter  - Bean with name 'dataSource' has been autodetected for JMX exposure
+18-04-18.16:34:56.670 [main            ] INFO  AnnotationMBeanExporter  - Bean with name 'rabbitConnectionFactory' has been autodetected for JMX exposure
+18-04-18.16:34:56.673 [main            ] INFO  AnnotationMBeanExporter  - Located MBean 'dataSource': registering with JMX server as MBean [com.alibaba.druid.pool:name=dataSource,type=DruidDataSource]
+18-04-18.16:34:56.676 [main            ] INFO  AnnotationMBeanExporter  - Located managed bean 'rabbitConnectionFactory': registering with JMX server as MBean [org.springframework.amqp.rabbit.connection:name=rabbitConnectionFactory,type=CachingConnectionFactory]
+18-04-18.16:34:56.698 [main            ] INFO  DefaultLifecycleProcessor  - Starting beans in phase 2147483647
+18-04-18.16:34:57.004 [reactor-http-nio-1] INFO  BlockingNettyContext    - Started HttpServer on /0:0:0:0:0:0:0:0:8080
+18-04-18.16:34:57.006 [main            ] INFO  NettyWebServer          - Netty started on port(s): 8080
+18-04-18.16:34:57.011 [main            ] INFO  SpringBootMain          - Started SpringBootMain in 4.268 seconds (JVM running for 5.819)
+18-04-18.16:35:12.575 [reactor-http-nio-2] WARN  DefaultErrorWebExceptionHandler  - Failed to handle request [GET http://localhost:8080/druid/login.html]: Response status 404
+18-04-18.16:42:00.966 [reactor-http-nio-4] WARN  DefaultErrorWebExceptionHandler  - Failed to handle request [GET http://127.0.0.1:8080/MavenSpringBoot/druid/login.html]: Response status 404
+18-04-18.16:42:08.829 [reactor-http-nio-1] WARN  DefaultErrorWebExceptionHandler  - Failed to handle request [GET http://127.0.0.1:8080/springboot-integration/druid/login.html]: Response status 404
+18-04-18.16:42:16.813 [reactor-http-nio-2] WARN  DefaultErrorWebExceptionHandler  - Failed to handle request [GET http://localhost:8080/springboot-integration/druid/login.html]: Response status 404
+18-04-18.16:46:36.056 [reactor-http-nio-4] WARN  DefaultErrorWebExceptionHandler  - Failed to handle request [GET http://localhost:8080/druid/login.html]: Response status 404
+18-04-18.16:57:34.376 [reactor-http-nio-2] WARN  DefaultErrorWebExceptionHandler  - Failed to handle request [GET http://localhost:8080/druid]: Response status 404
+18-04-18.16:58:04.058 [reactor-http-nio-4] WARN  DefaultErrorWebExceptionHandler  - Failed to handle request [GET http://localhost:8080/druid]: Response status 404
+18-04-18.16:58:10.038 [reactor-http-nio-4] WARN  DefaultErrorWebExceptionHandler  - Failed to handle request [GET http://localhost:8080/druid/login.html]: Response status 404
+18-04-18.17:01:38.415 [main            ] INFO  SpringBootMain          - Starting SpringBootMain on ZB-MP120GHR with PID 11308 (D:\jcode\springboot-integration\web\target\classes started by zhaochen5 in D:\jcode\springboot-integration)
+18-04-18.17:01:38.419 [main            ] INFO  SpringBootMain          - No active profile set, falling back to default profiles: default
+18-04-18.17:01:38.524 [main            ] INFO  AnnotationConfigReactiveWebServerApplicationContext  - Refreshing org.springframework.boot.web.reactive.context.AnnotationConfigReactiveWebServerApplicationContext@7dc0f706: startup date [Wed Apr 18 17:01:38 CST 2018]; root of context hierarchy
+18-04-18.17:01:39.124 [main            ] INFO  RepositoryConfigurationDelegate  - Multiple Spring Data modules found, entering strict repository configuration mode!
+18-04-18.17:01:39.427 [main            ] INFO  PostProcessorRegistrationDelegate$BeanPostProcessorChecker  - Bean 'org.springframework.amqp.rabbit.annotation.RabbitBootstrapConfiguration' of type [org.springframework.amqp.rabbit.annotation.RabbitBootstrapConfiguration$$EnhancerBySpringCGLIB$$84a498e5] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+18-04-18.17:01:39.800 [main            ] INFO  RequestMappingHandlerMapping  - Mapped "{[/list],methods=[GET]}" onto public java.lang.Object org.flow.controller.UserController.list()
+18-04-18.17:01:39.859 [main            ] INFO  SimpleUrlHandlerMapping  - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.reactive.resource.ResourceWebHandler]
+18-04-18.17:01:39.859 [main            ] INFO  SimpleUrlHandlerMapping  - Mapped URL path [/**] onto handler of type [class org.springframework.web.reactive.resource.ResourceWebHandler]
+18-04-18.17:01:39.906 [main            ] INFO  ControllerMethodResolver  - Looking for @ControllerAdvice: org.springframework.boot.web.reactive.context.AnnotationConfigReactiveWebServerApplicationContext@7dc0f706: startup date [Wed Apr 18 17:01:38 CST 2018]; root of context hierarchy
+18-04-18.17:01:41.317 [main            ] INFO  AnnotationMBeanExporter  - Registering beans for JMX exposure on startup
+18-04-18.17:01:41.318 [main            ] INFO  AnnotationMBeanExporter  - Bean with name 'druidDataSource' has been autodetected for JMX exposure
+18-04-18.17:01:41.326 [main            ] INFO  AnnotationMBeanExporter  - Bean with name 'rabbitConnectionFactory' has been autodetected for JMX exposure
+18-04-18.17:01:41.329 [main            ] INFO  AnnotationMBeanExporter  - Located managed bean 'rabbitConnectionFactory': registering with JMX server as MBean [org.springframework.amqp.rabbit.connection:name=rabbitConnectionFactory,type=CachingConnectionFactory]
+18-04-18.17:01:41.347 [main            ] INFO  AnnotationMBeanExporter  - Located MBean 'druidDataSource': registering with JMX server as MBean [com.alibaba.druid.pool:name=druidDataSource,type=DruidDataSource]
+18-04-18.17:01:41.354 [main            ] INFO  DefaultLifecycleProcessor  - Starting beans in phase 2147483647
+18-04-18.17:01:41.679 [reactor-http-nio-1] INFO  BlockingNettyContext    - Started HttpServer on /0:0:0:0:0:0:0:0:8080
+18-04-18.17:01:41.680 [main            ] INFO  NettyWebServer          - Netty started on port(s): 8080
+18-04-18.17:01:41.684 [main            ] INFO  SpringBootMain          - Started SpringBootMain in 4.094 seconds (JVM running for 5.999)
+18-04-18.17:02:44.747 [main            ] INFO  SpringBootMain          - Starting SpringBootMain on ZB-MP120GHR with PID 9852 (D:\jcode\springboot-integration\web\target\classes started by zhaochen5 in D:\jcode\springboot-integration)
+18-04-18.17:02:44.751 [main            ] INFO  SpringBootMain          - No active profile set, falling back to default profiles: default
+18-04-18.17:02:44.866 [main            ] INFO  AnnotationConfigReactiveWebServerApplicationContext  - Refreshing org.springframework.boot.web.reactive.context.AnnotationConfigReactiveWebServerApplicationContext@2002fc1d: startup date [Wed Apr 18 17:02:44 CST 2018]; root of context hierarchy
+18-04-18.17:02:45.839 [main            ] INFO  RepositoryConfigurationDelegate  - Multiple Spring Data modules found, entering strict repository configuration mode!
+18-04-18.17:02:46.140 [main            ] INFO  PostProcessorRegistrationDelegate$BeanPostProcessorChecker  - Bean 'org.springframework.amqp.rabbit.annotation.RabbitBootstrapConfiguration' of type [org.springframework.amqp.rabbit.annotation.RabbitBootstrapConfiguration$$EnhancerBySpringCGLIB$$dfdbf95] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+18-04-18.17:02:46.495 [main            ] INFO  RequestMappingHandlerMapping  - Mapped "{[/list],methods=[GET]}" onto public java.lang.Object org.flow.controller.UserController.list()
+18-04-18.17:02:46.552 [main            ] INFO  SimpleUrlHandlerMapping  - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.reactive.resource.ResourceWebHandler]
+18-04-18.17:02:46.552 [main            ] INFO  SimpleUrlHandlerMapping  - Mapped URL path [/**] onto handler of type [class org.springframework.web.reactive.resource.ResourceWebHandler]
+18-04-18.17:02:46.593 [main            ] INFO  ControllerMethodResolver  - Looking for @ControllerAdvice: org.springframework.boot.web.reactive.context.AnnotationConfigReactiveWebServerApplicationContext@2002fc1d: startup date [Wed Apr 18 17:02:44 CST 2018]; root of context hierarchy
+18-04-18.17:02:48.082 [main            ] INFO  AnnotationMBeanExporter  - Registering beans for JMX exposure on startup
+18-04-18.17:02:48.083 [main            ] INFO  AnnotationMBeanExporter  - Bean with name 'druidDataSource' has been autodetected for JMX exposure
+18-04-18.17:02:48.090 [main            ] INFO  AnnotationMBeanExporter  - Bean with name 'rabbitConnectionFactory' has been autodetected for JMX exposure
+18-04-18.17:02:48.094 [main            ] INFO  AnnotationMBeanExporter  - Located managed bean 'rabbitConnectionFactory': registering with JMX server as MBean [org.springframework.amqp.rabbit.connection:name=rabbitConnectionFactory,type=CachingConnectionFactory]
+18-04-18.17:02:48.114 [main            ] INFO  AnnotationMBeanExporter  - Located MBean 'druidDataSource': registering with JMX server as MBean [com.alibaba.druid.pool:name=druidDataSource,type=DruidDataSource]
+18-04-18.17:02:48.120 [main            ] INFO  DefaultLifecycleProcessor  - Starting beans in phase 2147483647
+18-04-18.17:02:48.463 [reactor-http-nio-1] INFO  BlockingNettyContext    - Started HttpServer on /0:0:0:0:0:0:0:0:8080
+18-04-18.17:02:48.464 [main            ] INFO  NettyWebServer          - Netty started on port(s): 8080
+18-04-18.17:02:48.468 [main            ] INFO  SpringBootMain          - Started SpringBootMain in 4.692 seconds (JVM running for 6.489)
+18-04-18.17:10:25.428 [main            ] INFO  SpringBootMain          - Starting SpringBootMain on ZB-MP120GHR with PID 9688 (D:\jcode\springboot-integration\web\target\classes started by zhaochen5 in D:\jcode\springboot-integration)
+18-04-18.17:10:25.431 [main            ] INFO  SpringBootMain          - No active profile set, falling back to default profiles: default
+18-04-18.17:10:25.471 [main            ] INFO  AnnotationConfigReactiveWebServerApplicationContext  - Refreshing org.springframework.boot.web.reactive.context.AnnotationConfigReactiveWebServerApplicationContext@158a8276: startup date [Wed Apr 18 17:10:25 CST 2018]; root of context hierarchy
+18-04-18.17:10:25.991 [main            ] INFO  RepositoryConfigurationDelegate  - Multiple Spring Data modules found, entering strict repository configuration mode!
+18-04-18.17:10:26.304 [main            ] INFO  PostProcessorRegistrationDelegate$BeanPostProcessorChecker  - Bean 'org.springframework.amqp.rabbit.annotation.RabbitBootstrapConfiguration' of type [org.springframework.amqp.rabbit.annotation.RabbitBootstrapConfiguration$$EnhancerBySpringCGLIB$$792e5f9d] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+18-04-18.17:10:26.633 [main            ] INFO  RequestMappingHandlerMapping  - Mapped "{[/list],methods=[GET]}" onto public java.lang.Object org.flow.controller.UserController.list()
+18-04-18.17:10:26.681 [main            ] INFO  SimpleUrlHandlerMapping  - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.reactive.resource.ResourceWebHandler]
+18-04-18.17:10:26.681 [main            ] INFO  SimpleUrlHandlerMapping  - Mapped URL path [/**] onto handler of type [class org.springframework.web.reactive.resource.ResourceWebHandler]
+18-04-18.17:10:26.723 [main            ] INFO  ControllerMethodResolver  - Looking for @ControllerAdvice: org.springframework.boot.web.reactive.context.AnnotationConfigReactiveWebServerApplicationContext@158a8276: startup date [Wed Apr 18 17:10:25 CST 2018]; root of context hierarchy
+18-04-18.17:10:28.076 [main            ] INFO  AnnotationMBeanExporter  - Registering beans for JMX exposure on startup
+18-04-18.17:10:28.077 [main            ] INFO  AnnotationMBeanExporter  - Bean with name 'druidDataSource' has been autodetected for JMX exposure
+18-04-18.17:10:28.084 [main            ] INFO  AnnotationMBeanExporter  - Bean with name 'rabbitConnectionFactory' has been autodetected for JMX exposure
+18-04-18.17:10:28.087 [main            ] INFO  AnnotationMBeanExporter  - Located managed bean 'rabbitConnectionFactory': registering with JMX server as MBean [org.springframework.amqp.rabbit.connection:name=rabbitConnectionFactory,type=CachingConnectionFactory]
+18-04-18.17:10:28.105 [main            ] INFO  AnnotationMBeanExporter  - Located MBean 'druidDataSource': registering with JMX server as MBean [com.alibaba.druid.pool:name=druidDataSource,type=DruidDataSource]
+18-04-18.17:10:28.111 [main            ] INFO  DefaultLifecycleProcessor  - Starting beans in phase 2147483647
+18-04-18.17:10:28.441 [reactor-http-nio-1] INFO  BlockingNettyContext    - Started HttpServer on /0:0:0:0:0:0:0:0:8080
+18-04-18.17:10:28.443 [main            ] INFO  NettyWebServer          - Netty started on port(s): 8080
+18-04-18.17:10:28.447 [main            ] INFO  SpringBootMain          - Started SpringBootMain in 3.944 seconds (JVM running for 5.514)
+18-04-18.17:11:54.361 [reactor-http-nio-2] INFO  DruidDataSource         - {dataSource-1} inited
+18-04-18.17:11:54.383 [reactor-http-nio-2] DEBUG selectAll               - ==>  Preparing: select id, organization_id, username, password, salt, role_ids, locked, create_time, update_time from sys_user 
+18-04-18.17:11:54.462 [reactor-http-nio-2] DEBUG Statement               - {conn-10001, pstmt-20000} created. select id, organization_id, username, password, salt, role_ids, locked, create_time, 
+    update_time
+    from sys_user
+18-04-18.17:11:54.474 [reactor-http-nio-2] DEBUG selectAll               - ==> Parameters: 
+18-04-18.17:11:54.478 [reactor-http-nio-2] DEBUG Statement               - {conn-10001, pstmt-20000} Parameters : []
+18-04-18.17:11:54.479 [reactor-http-nio-2] DEBUG Statement               - {conn-10001, pstmt-20000} Types : []
+18-04-18.17:11:54.480 [reactor-http-nio-2] DEBUG Statement               - {conn-10001, pstmt-20000} executed. 4.666948 millis. select id, organization_id, username, password, salt, role_ids, locked, create_time, 
+    update_time
+    from sys_user
+18-04-18.17:11:54.493 [reactor-http-nio-2] TRACE selectAll               - <==    Columns: id, organization_id, username, password, salt, role_ids, locked, create_time, update_time
+18-04-18.17:11:54.493 [reactor-http-nio-2] TRACE selectAll               - <==        Row: 1, 1, admin, d3c59d25033dbf980d29554025c23a75, 8d78869f470951332959580424d4bf4f, 1, 0, 2018-04-17 13:09:11, 2018-04-17 13:09:11
+18-04-18.17:11:54.496 [reactor-http-nio-2] DEBUG selectAll               - <==      Total: 1
+18-04-18.17:11:54.497 [reactor-http-nio-2] DEBUG Statement               - {conn-10001, pstmt-20000} clearParameters. 
+18-04-18.17:12:26.052 [reactor-http-nio-2] WARN  DefaultErrorWebExceptionHandler  - Failed to handle request [GET http://localhost:8080/druid]: Response status 404
+18-04-18.17:12:31.798 [reactor-http-nio-2] WARN  DefaultErrorWebExceptionHandler  - Failed to handle request [GET http://localhost:8080/web/druid]: Response status 404
+18-04-18.17:53:31.124 [main            ] INFO  SpringBootMain          - Starting SpringBootMain on ZB-MP120GHR with PID 14424 (D:\jcode\springboot-integration\web\target\classes started by zhaochen5 in D:\jcode\springboot-integration)
+18-04-18.17:53:31.130 [main            ] INFO  SpringBootMain          - No active profile set, falling back to default profiles: default
+18-04-18.17:53:31.216 [main            ] INFO  AnnotationConfigReactiveWebServerApplicationContext  - Refreshing org.springframework.boot.web.reactive.context.AnnotationConfigReactiveWebServerApplicationContext@c0c2f8d: startup date [Wed Apr 18 17:53:31 CST 2018]; root of context hierarchy
+18-04-18.17:53:31.827 [main            ] INFO  RepositoryConfigurationDelegate  - Multiple Spring Data modules found, entering strict repository configuration mode!
+18-04-18.17:53:32.175 [main            ] INFO  PostProcessorRegistrationDelegate$BeanPostProcessorChecker  - Bean 'org.springframework.amqp.rabbit.annotation.RabbitBootstrapConfiguration' of type [org.springframework.amqp.rabbit.annotation.RabbitBootstrapConfiguration$$EnhancerBySpringCGLIB$$83fb846b] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+18-04-18.17:53:32.539 [main            ] INFO  RequestMappingHandlerMapping  - Mapped "{[/list],methods=[GET]}" onto public java.lang.Object org.flow.controller.UserController.list()
+18-04-18.17:53:32.614 [main            ] INFO  SimpleUrlHandlerMapping  - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.reactive.resource.ResourceWebHandler]
+18-04-18.17:53:32.614 [main            ] INFO  SimpleUrlHandlerMapping  - Mapped URL path [/**] onto handler of type [class org.springframework.web.reactive.resource.ResourceWebHandler]
+18-04-18.17:53:32.712 [main            ] INFO  ControllerMethodResolver  - Looking for @ControllerAdvice: org.springframework.boot.web.reactive.context.AnnotationConfigReactiveWebServerApplicationContext@c0c2f8d: startup date [Wed Apr 18 17:53:31 CST 2018]; root of context hierarchy
+18-04-18.17:53:34.840 [main            ] INFO  AnnotationMBeanExporter  - Registering beans for JMX exposure on startup
+18-04-18.17:53:34.841 [main            ] INFO  AnnotationMBeanExporter  - Bean with name 'druidDataSource' has been autodetected for JMX exposure
+18-04-18.17:53:34.850 [main            ] INFO  AnnotationMBeanExporter  - Bean with name 'rabbitConnectionFactory' has been autodetected for JMX exposure
+18-04-18.17:53:34.852 [main            ] INFO  AnnotationMBeanExporter  - Located managed bean 'rabbitConnectionFactory': registering with JMX server as MBean [org.springframework.amqp.rabbit.connection:name=rabbitConnectionFactory,type=CachingConnectionFactory]
+18-04-18.17:53:34.871 [main            ] INFO  AnnotationMBeanExporter  - Located MBean 'druidDataSource': registering with JMX server as MBean [com.alibaba.druid.pool:name=druidDataSource,type=DruidDataSource]
+18-04-18.17:53:34.876 [main            ] INFO  DefaultLifecycleProcessor  - Starting beans in phase 2147483647
+18-04-18.17:53:35.184 [reactor-http-nio-1] INFO  BlockingNettyContext    - Started HttpServer on /0:0:0:0:0:0:0:0:8080
+18-04-18.17:53:35.185 [main            ] INFO  NettyWebServer          - Netty started on port(s): 8080
+18-04-18.17:53:35.190 [main            ] INFO  SpringBootMain          - Started SpringBootMain in 5.273 seconds (JVM running for 7.664)
+18-04-18.17:53:51.367 [reactor-http-nio-2] WARN  DefaultErrorWebExceptionHandler  - Failed to handle request [GET http://localhost:8080/druid]: Response status 404
+18-04-18.17:53:56.110 [reactor-http-nio-2] INFO  DruidDataSource         - {dataSource-1} inited
+18-04-18.17:53:56.132 [reactor-http-nio-2] DEBUG selectAll               - ==>  Preparing: select id, organization_id, username, password, salt, role_ids, locked, create_time, update_time from sys_user 
+18-04-18.17:53:56.234 [reactor-http-nio-2] DEBUG Statement               - {conn-10001, pstmt-20000} created. select id, organization_id, username, password, salt, role_ids, locked, create_time, 
+    update_time
+    from sys_user
+18-04-18.17:53:56.245 [reactor-http-nio-2] DEBUG selectAll               - ==> Parameters: 
+18-04-18.17:53:56.250 [reactor-http-nio-2] DEBUG Statement               - {conn-10001, pstmt-20000} Parameters : []
+18-04-18.17:53:56.250 [reactor-http-nio-2] DEBUG Statement               - {conn-10001, pstmt-20000} Types : []
+18-04-18.17:53:56.251 [reactor-http-nio-2] DEBUG Statement               - {conn-10001, pstmt-20000} executed. 5.159173 millis. select id, organization_id, username, password, salt, role_ids, locked, create_time, 
+    update_time
+    from sys_user
+18-04-18.17:53:56.264 [reactor-http-nio-2] TRACE selectAll               - <==    Columns: id, organization_id, username, password, salt, role_ids, locked, create_time, update_time
+18-04-18.17:53:56.264 [reactor-http-nio-2] TRACE selectAll               - <==        Row: 1, 1, admin, d3c59d25033dbf980d29554025c23a75, 8d78869f470951332959580424d4bf4f, 1, 0, 2018-04-17 13:09:11, 2018-04-17 13:09:11
+18-04-18.17:53:56.267 [reactor-http-nio-2] DEBUG selectAll               - <==      Total: 1
+18-04-18.17:53:56.267 [reactor-http-nio-2] DEBUG Statement               - {conn-10001, pstmt-20000} clearParameters. 
+18-04-18.17:54:05.546 [reactor-http-nio-2] WARN  DefaultErrorWebExceptionHandler  - Failed to handle request [GET http://localhost:8080/druid/login.html]: Response status 404
+18-04-18.17:54:34.851 [main            ] INFO  SpringBootMain          - Starting SpringBootMain on ZB-MP120GHR with PID 13728 (D:\jcode\springboot-integration\web\target\classes started by zhaochen5 in D:\jcode\springboot-integration)
+18-04-18.17:54:34.854 [main            ] INFO  SpringBootMain          - No active profile set, falling back to default profiles: default
+18-04-18.17:54:34.898 [main            ] INFO  AnnotationConfigReactiveWebServerApplicationContext  - Refreshing org.springframework.boot.web.reactive.context.AnnotationConfigReactiveWebServerApplicationContext@43c1b556: startup date [Wed Apr 18 17:54:34 CST 2018]; root of context hierarchy
+18-04-18.17:54:35.643 [main            ] INFO  RepositoryConfigurationDelegate  - Multiple Spring Data modules found, entering strict repository configuration mode!
+18-04-18.17:54:35.944 [main            ] INFO  PostProcessorRegistrationDelegate$BeanPostProcessorChecker  - Bean 'org.springframework.amqp.rabbit.annotation.RabbitBootstrapConfiguration' of type [org.springframework.amqp.rabbit.annotation.RabbitBootstrapConfiguration$$EnhancerBySpringCGLIB$$b052bb6f] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+18-04-18.17:54:36.357 [main            ] INFO  RequestMappingHandlerMapping  - Mapped "{[/list],methods=[GET]}" onto public java.lang.Object org.flow.controller.UserController.list()
+18-04-18.17:54:36.410 [main            ] INFO  SimpleUrlHandlerMapping  - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.reactive.resource.ResourceWebHandler]
+18-04-18.17:54:36.411 [main            ] INFO  SimpleUrlHandlerMapping  - Mapped URL path [/**] onto handler of type [class org.springframework.web.reactive.resource.ResourceWebHandler]
+18-04-18.17:54:36.458 [main            ] INFO  ControllerMethodResolver  - Looking for @ControllerAdvice: org.springframework.boot.web.reactive.context.AnnotationConfigReactiveWebServerApplicationContext@43c1b556: startup date [Wed Apr 18 17:54:34 CST 2018]; root of context hierarchy
+18-04-18.17:54:37.887 [main            ] INFO  AnnotationMBeanExporter  - Registering beans for JMX exposure on startup
+18-04-18.17:54:37.888 [main            ] INFO  AnnotationMBeanExporter  - Bean with name 'druidDataSource' has been autodetected for JMX exposure
+18-04-18.17:54:37.924 [main            ] INFO  AnnotationMBeanExporter  - Bean with name 'rabbitConnectionFactory' has been autodetected for JMX exposure
+18-04-18.17:54:37.943 [main            ] INFO  AnnotationMBeanExporter  - Located managed bean 'rabbitConnectionFactory': registering with JMX server as MBean [org.springframework.amqp.rabbit.connection:name=rabbitConnectionFactory,type=CachingConnectionFactory]
+18-04-18.17:54:38.015 [main            ] INFO  AnnotationMBeanExporter  - Located MBean 'druidDataSource': registering with JMX server as MBean [com.alibaba.druid.pool:name=druidDataSource,type=DruidDataSource]
+18-04-18.17:54:38.026 [main            ] INFO  DefaultLifecycleProcessor  - Starting beans in phase 2147483647
+18-04-18.17:54:38.474 [reactor-http-nio-1] INFO  BlockingNettyContext    - Started HttpServer on /0:0:0:0:0:0:0:0:8080
+18-04-18.17:54:38.475 [main            ] INFO  NettyWebServer          - Netty started on port(s): 8080
+18-04-18.17:54:38.483 [main            ] INFO  SpringBootMain          - Started SpringBootMain in 3.962 seconds (JVM running for 7.657)
+18-04-18.17:54:57.078 [reactor-http-nio-2] INFO  DruidDataSource         - {dataSource-1} inited
+18-04-18.17:54:57.106 [reactor-http-nio-2] DEBUG selectAll               - ==>  Preparing: select id, organization_id, username, password, salt, role_ids, locked, create_time, update_time from sys_user 
+18-04-18.17:54:57.188 [reactor-http-nio-2] DEBUG Statement               - {conn-10001, pstmt-20000} created. select id, organization_id, username, password, salt, role_ids, locked, create_time, 
+    update_time
+    from sys_user
+18-04-18.17:54:57.199 [reactor-http-nio-2] DEBUG selectAll               - ==> Parameters: 
+18-04-18.17:54:57.203 [reactor-http-nio-2] DEBUG Statement               - {conn-10001, pstmt-20000} Parameters : []
+18-04-18.17:54:57.203 [reactor-http-nio-2] DEBUG Statement               - {conn-10001, pstmt-20000} Types : []
+18-04-18.17:54:57.208 [reactor-http-nio-2] DEBUG Statement               - {conn-10001, pstmt-20000} executed. 8.423856 millis. select id, organization_id, username, password, salt, role_ids, locked, create_time, 
+    update_time
+    from sys_user
+18-04-18.17:54:57.221 [reactor-http-nio-2] TRACE selectAll               - <==    Columns: id, organization_id, username, password, salt, role_ids, locked, create_time, update_time
+18-04-18.17:54:57.222 [reactor-http-nio-2] TRACE selectAll               - <==        Row: 1, 1, admin, d3c59d25033dbf980d29554025c23a75, 8d78869f470951332959580424d4bf4f, 1, 0, 2018-04-17 13:09:11, 2018-04-17 13:09:11
+18-04-18.17:54:57.224 [reactor-http-nio-2] DEBUG selectAll               - <==      Total: 1
+18-04-18.17:54:57.225 [reactor-http-nio-2] DEBUG Statement               - {conn-10001, pstmt-20000} clearParameters. 
+18-04-18.17:55:01.424 [reactor-http-nio-2] WARN  DefaultErrorWebExceptionHandler  - Failed to handle request [GET http://localhost:8080/druid]: Response status 404
+18-04-18.17:55:12.792 [reactor-http-nio-2] WARN  DefaultErrorWebExceptionHandler  - Failed to handle request [GET http://localhost:8080/druid/login.html]: Response status 404
