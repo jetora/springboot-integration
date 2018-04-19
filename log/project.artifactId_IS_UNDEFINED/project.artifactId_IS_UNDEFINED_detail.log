@@ -1047,3 +1047,167 @@
 18-04-19.16:15:43.115 [http-nio-8080-exec-1] TRACE selectByPrimaryKey      - <==    Columns: id, organization_id, username, password, salt, role_ids, locked, create_time, update_time
 18-04-19.16:15:43.115 [http-nio-8080-exec-1] TRACE selectByPrimaryKey      - <==        Row: 3, 1, jack, 123, 123, null, 1, 2018-04-19 22:34:27.0, null
 18-04-19.16:15:43.118 [http-nio-8080-exec-1] DEBUG selectByPrimaryKey      - <==      Total: 1
+18-04-19.17:30:25.674 [main            ] INFO  SpringBootMain          - Starting SpringBootMain on ZB-MP120GHR with PID 11628 (D:\jcode\springboot-integration\web\target\classes started by zhaochen5 in D:\jcode\springboot-integration)
+18-04-19.17:30:25.678 [main            ] INFO  SpringBootMain          - No active profile set, falling back to default profiles: default
+18-04-19.17:30:25.842 [main            ] INFO  AnnotationConfigServletWebServerApplicationContext  - Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@ae13544: startup date [Thu Apr 19 17:30:25 CST 2018]; root of context hierarchy
+18-04-19.17:30:26.799 [main            ] INFO  RepositoryConfigurationDelegate  - Multiple Spring Data modules found, entering strict repository configuration mode!
+18-04-19.17:30:27.194 [main            ] INFO  PostProcessorRegistrationDelegate$BeanPostProcessorChecker  - Bean 'org.springframework.amqp.rabbit.annotation.RabbitBootstrapConfiguration' of type [org.springframework.amqp.rabbit.annotation.RabbitBootstrapConfiguration$$EnhancerBySpringCGLIB$$6e9ca7ce] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+18-04-19.17:30:27.246 [main            ] INFO  PostProcessorRegistrationDelegate$BeanPostProcessorChecker  - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$a830e9a0] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+18-04-19.17:30:27.529 [main            ] INFO  TomcatWebServer         - Tomcat initialized with port(s): 8080 (http)
+18-04-19.17:30:27.540 [main            ] INFO  Http11NioProtocol       - Initializing ProtocolHandler ["http-nio-8080"]
+18-04-19.17:30:27.550 [main            ] INFO  StandardService         - Starting service [Tomcat]
+18-04-19.17:30:27.550 [main            ] INFO  StandardEngine          - Starting Servlet Engine: Apache Tomcat/8.5.29
+18-04-19.17:30:27.554 [localhost-startStop-1] INFO  AprLifecycleListener    - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk1.8.0_162\bin;C:\windows\Sun\Java\bin;C:\windows\system32;C:\windows;C:\Program Files\Python36\Scripts\;C:\Program Files\Python36\;C:\ProgramData\Oracle\Java\javapath;C:\windows\system32;C:\windows;C:\windows\System32\Wbem;C:\windows\System32\WindowsPowerShell\v1.0\;C:\Program Files\Git\cmd;C:\ProgramData\chocolatey\bin;D:\software\Go\bin;D:\software\nodejs\;C:\Users\zhaochen5\AppData\Roaming\npm;D:\software\Microsoft VS Code\bin;.]
+18-04-19.17:30:27.656 [localhost-startStop-1] INFO  [/]                     - Initializing Spring embedded WebApplicationContext
+18-04-19.17:30:27.656 [localhost-startStop-1] INFO  ContextLoader           - Root WebApplicationContext: initialization completed in 1815 ms
+18-04-19.17:30:27.850 [localhost-startStop-1] INFO  ServletRegistrationBean  - Servlet statViewServlet mapped to [/druid/*]
+18-04-19.17:30:27.851 [localhost-startStop-1] INFO  ServletRegistrationBean  - Servlet dispatcherServlet mapped to [/]
+18-04-19.17:30:27.854 [localhost-startStop-1] INFO  FilterRegistrationBean  - Mapping filter: 'characterEncodingFilter' to: [/*]
+18-04-19.17:30:27.855 [localhost-startStop-1] INFO  FilterRegistrationBean  - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+18-04-19.17:30:27.855 [localhost-startStop-1] INFO  FilterRegistrationBean  - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+18-04-19.17:30:27.855 [localhost-startStop-1] INFO  FilterRegistrationBean  - Mapping filter: 'requestContextFilter' to: [/*]
+18-04-19.17:30:27.855 [localhost-startStop-1] INFO  FilterRegistrationBean  - Mapping filter: 'webStatFilter' to urls: [/*]
+18-04-19.17:30:27.855 [localhost-startStop-1] INFO  FilterRegistrationBean  - Mapping filter: 'corsFilter' to: [/*]
+18-04-19.17:30:27.938 [main            ] WARN  AnnotationConfigServletWebServerApplicationContext  - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'userController': Injection of resource dependencies failed; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'userServiceImpl': Injection of resource dependencies failed; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'userMapper' defined in file [D:\jcode\springboot-integration\dao\target\classes\org\flow\dao\mapper\UserMapper.class]: Unsatisfied dependency expressed through bean property 'sqlSessionFactory'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'sqlSessionFactory' defined in class path resource [org/mybatis/spring/boot/autoconfigure/MybatisAutoConfiguration.class]: Unsatisfied dependency expressed through method 'sqlSessionFactory' parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dataSource' defined in class path resource [org/springframework/boot/autoconfigure/jdbc/DataSourceConfiguration$Hikari.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.zaxxer.hikari.HikariDataSource]: Factory method 'dataSource' threw exception; nested exception is org.springframework.boot.autoconfigure.jdbc.DataSourceProperties$DataSourceBeanCreationException: Failed to determine a suitable driver class
+18-04-19.17:30:27.940 [main            ] INFO  StandardService         - Stopping service [Tomcat]
+18-04-19.17:30:27.961 [main            ] INFO  ConditionEvaluationReportLoggingListener  - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+18-04-19.17:30:27.964 [main            ] ERROR LoggingFailureAnalysisReporter  - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Failed to auto-configure a DataSource: 'spring.datasource.url' is not specified and no embedded datasource could be auto-configured.
+
+Reason: Failed to determine a suitable driver class
+
+
+Action:
+
+Consider the following:
+	If you want an embedded database (H2, HSQL or Derby), please put it on the classpath.
+	If you have database settings to be loaded from a particular profile you may need to activate it (no profiles are currently active).
+
+18-04-19.17:33:03.119 [main            ] INFO  SpringBootMain          - Starting SpringBootMain on ZB-MP120GHR with PID 15184 (D:\jcode\springboot-integration\web\target\classes started by zhaochen5 in D:\jcode\springboot-integration)
+18-04-19.17:33:03.122 [main            ] INFO  SpringBootMain          - The following profiles are active: dev
+18-04-19.17:33:03.201 [main            ] INFO  AnnotationConfigServletWebServerApplicationContext  - Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@3f56875e: startup date [Thu Apr 19 17:33:03 CST 2018]; root of context hierarchy
+18-04-19.17:33:03.967 [main            ] INFO  RepositoryConfigurationDelegate  - Multiple Spring Data modules found, entering strict repository configuration mode!
+18-04-19.17:33:04.357 [main            ] INFO  PostProcessorRegistrationDelegate$BeanPostProcessorChecker  - Bean 'org.springframework.amqp.rabbit.annotation.RabbitBootstrapConfiguration' of type [org.springframework.amqp.rabbit.annotation.RabbitBootstrapConfiguration$$EnhancerBySpringCGLIB$$ac3586c1] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+18-04-19.17:33:04.415 [main            ] INFO  PostProcessorRegistrationDelegate$BeanPostProcessorChecker  - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$e5c9c893] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+18-04-19.17:33:04.734 [main            ] INFO  TomcatWebServer         - Tomcat initialized with port(s): 8080 (http)
+18-04-19.17:33:04.746 [main            ] INFO  Http11NioProtocol       - Initializing ProtocolHandler ["http-nio-8080"]
+18-04-19.17:33:04.758 [main            ] INFO  StandardService         - Starting service [Tomcat]
+18-04-19.17:33:04.758 [main            ] INFO  StandardEngine          - Starting Servlet Engine: Apache Tomcat/8.5.29
+18-04-19.17:33:04.762 [localhost-startStop-1] INFO  AprLifecycleListener    - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk1.8.0_162\bin;C:\windows\Sun\Java\bin;C:\windows\system32;C:\windows;C:\Program Files\Python36\Scripts\;C:\Program Files\Python36\;C:\ProgramData\Oracle\Java\javapath;C:\windows\system32;C:\windows;C:\windows\System32\Wbem;C:\windows\System32\WindowsPowerShell\v1.0\;C:\Program Files\Git\cmd;C:\ProgramData\chocolatey\bin;D:\software\Go\bin;D:\software\nodejs\;C:\Users\zhaochen5\AppData\Roaming\npm;D:\software\Microsoft VS Code\bin;.]
+18-04-19.17:33:04.878 [localhost-startStop-1] INFO  [/]                     - Initializing Spring embedded WebApplicationContext
+18-04-19.17:33:04.878 [localhost-startStop-1] INFO  ContextLoader           - Root WebApplicationContext: initialization completed in 1677 ms
+18-04-19.17:33:05.056 [localhost-startStop-1] INFO  ServletRegistrationBean  - Servlet statViewServlet mapped to [/druid/*]
+18-04-19.17:33:05.058 [localhost-startStop-1] INFO  ServletRegistrationBean  - Servlet dispatcherServlet mapped to [/]
+18-04-19.17:33:05.061 [localhost-startStop-1] INFO  FilterRegistrationBean  - Mapping filter: 'characterEncodingFilter' to: [/*]
+18-04-19.17:33:05.062 [localhost-startStop-1] INFO  FilterRegistrationBean  - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+18-04-19.17:33:05.062 [localhost-startStop-1] INFO  FilterRegistrationBean  - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+18-04-19.17:33:05.062 [localhost-startStop-1] INFO  FilterRegistrationBean  - Mapping filter: 'requestContextFilter' to: [/*]
+18-04-19.17:33:05.062 [localhost-startStop-1] INFO  FilterRegistrationBean  - Mapping filter: 'webStatFilter' to urls: [/*]
+18-04-19.17:33:05.062 [localhost-startStop-1] INFO  FilterRegistrationBean  - Mapping filter: 'corsFilter' to: [/*]
+18-04-19.17:33:05.895 [main            ] INFO  SimpleUrlHandlerMapping  - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+18-04-19.17:33:06.017 [main            ] INFO  RequestMappingHandlerAdapter  - Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@3f56875e: startup date [Thu Apr 19 17:33:03 CST 2018]; root of context hierarchy
+18-04-19.17:33:06.084 [main            ] INFO  RequestMappingHandlerMapping  - Mapped "{[/user/{id}],methods=[GET],produces=[application/json;charset=UTF-8]}" onto public org.flow.utils.ResponseResult<org.flow.entity.User> org.flow.controller.UserController.getUserById(java.lang.Long)
+18-04-19.17:33:06.085 [main            ] INFO  RequestMappingHandlerMapping  - Mapped "{[/user],methods=[POST],produces=[application/json;charset=UTF-8]}" onto public org.flow.utils.ResponseResult<org.flow.entity.User> org.flow.controller.UserController.insertSaveUser(org.flow.entity.User)
+18-04-19.17:33:06.085 [main            ] INFO  RequestMappingHandlerMapping  - Mapped "{[/user/list],methods=[GET],produces=[application/json;charset=UTF-8]}" onto public org.flow.utils.ResponseResult<java.util.List<org.flow.entity.User>> org.flow.controller.UserController.getUsers()
+18-04-19.17:33:06.086 [main            ] INFO  RequestMappingHandlerMapping  - Mapped "{[/user],methods=[PUT],produces=[application/json;charset=UTF-8]}" onto public org.flow.utils.ResponseResult<org.flow.entity.User> org.flow.controller.UserController.updateSaveUser(org.flow.entity.User)
+18-04-19.17:33:06.086 [main            ] INFO  RequestMappingHandlerMapping  - Mapped "{[/user/{id}],methods=[DELETE],produces=[application/json;charset=UTF-8]}" onto public org.flow.utils.ResponseResult<org.flow.entity.User> org.flow.controller.UserController.deleteSaveUser(java.lang.Long)
+18-04-19.17:33:06.089 [main            ] INFO  RequestMappingHandlerMapping  - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+18-04-19.17:33:06.090 [main            ] INFO  RequestMappingHandlerMapping  - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+18-04-19.17:33:06.144 [main            ] INFO  SimpleUrlHandlerMapping  - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+18-04-19.17:33:06.144 [main            ] INFO  SimpleUrlHandlerMapping  - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+18-04-19.17:33:06.179 [main            ] INFO  ExceptionHandlerExceptionResolver  - Detected @ExceptionHandler methods in exceptionAspect
+18-04-19.17:33:07.072 [main            ] INFO  AnnotationMBeanExporter  - Registering beans for JMX exposure on startup
+18-04-19.17:33:07.073 [main            ] INFO  AnnotationMBeanExporter  - Bean with name 'dataSource' has been autodetected for JMX exposure
+18-04-19.17:33:07.081 [main            ] INFO  AnnotationMBeanExporter  - Bean with name 'rabbitConnectionFactory' has been autodetected for JMX exposure
+18-04-19.17:33:07.084 [main            ] INFO  AnnotationMBeanExporter  - Located MBean 'dataSource': registering with JMX server as MBean [com.alibaba.druid.pool:name=dataSource,type=DruidDataSource]
+18-04-19.17:33:07.086 [main            ] INFO  AnnotationMBeanExporter  - Located managed bean 'rabbitConnectionFactory': registering with JMX server as MBean [org.springframework.amqp.rabbit.connection:name=rabbitConnectionFactory,type=CachingConnectionFactory]
+18-04-19.17:33:07.109 [main            ] INFO  DefaultLifecycleProcessor  - Starting beans in phase 2147483647
+18-04-19.17:33:07.117 [main            ] INFO  Http11NioProtocol       - Starting ProtocolHandler ["http-nio-8080"]
+18-04-19.17:33:07.128 [main            ] INFO  NioSelectorPool         - Using a shared selector for servlet write/read
+18-04-19.17:33:07.143 [main            ] INFO  TomcatWebServer         - Tomcat started on port(s): 8080 (http) with context path ''
+18-04-19.17:33:07.148 [main            ] INFO  SpringBootMain          - Started SpringBootMain in 4.884 seconds (JVM running for 6.635)
+18-04-19.17:33:17.426 [http-nio-8080-exec-1] INFO  [/]                     - Initializing Spring FrameworkServlet 'dispatcherServlet'
+18-04-19.17:33:17.426 [http-nio-8080-exec-1] INFO  DispatcherServlet       - FrameworkServlet 'dispatcherServlet': initialization started
+18-04-19.17:33:17.469 [http-nio-8080-exec-1] INFO  DispatcherServlet       - FrameworkServlet 'dispatcherServlet': initialization completed in 43 ms
+18-04-19.17:33:17.491 [http-nio-8080-exec-1] INFO  LogInterceptor          - 请求路径：/user/3
+18-04-19.17:33:17.561 [http-nio-8080-exec-1] INFO  DruidDataSource         - {dataSource-1} inited
+18-04-19.17:33:17.740 [http-nio-8080-exec-1] DEBUG selectByPrimaryKey      - ==>  Preparing: select id, organization_id, username, password, salt, role_ids, locked, create_time, update_time from sys_user where id = ? 
+18-04-19.17:33:17.757 [http-nio-8080-exec-1] DEBUG selectByPrimaryKey      - ==> Parameters: 3(Long)
+18-04-19.17:33:17.769 [http-nio-8080-exec-1] TRACE selectByPrimaryKey      - <==    Columns: id, organization_id, username, password, salt, role_ids, locked, create_time, update_time
+18-04-19.17:33:17.769 [http-nio-8080-exec-1] TRACE selectByPrimaryKey      - <==        Row: 3, 1, jack, 123, 123, null, 1, 2018-04-19 22:34:27.0, null
+18-04-19.17:33:17.771 [http-nio-8080-exec-1] DEBUG selectByPrimaryKey      - <==      Total: 1
+18-04-19.17:33:34.174 [http-nio-8080-exec-9] INFO  LogInterceptor          - 请求路径：/user/list
+18-04-19.17:33:34.190 [http-nio-8080-exec-9] DEBUG selectAll               - ==>  Preparing: select id, organization_id, username, password, salt, role_ids, locked, create_time, update_time from sys_user 
+18-04-19.17:33:34.191 [http-nio-8080-exec-9] DEBUG selectAll               - ==> Parameters: 
+18-04-19.17:33:34.194 [http-nio-8080-exec-9] TRACE selectAll               - <==    Columns: id, organization_id, username, password, salt, role_ids, locked, create_time, update_time
+18-04-19.17:33:34.194 [http-nio-8080-exec-9] TRACE selectAll               - <==        Row: 1, 1, admin, d3c59d25033dbf980d29554025c23a75, 8d78869f470951332959580424d4bf4f, 1, 0, 2018-04-17 21:09:11.0, 2018-04-17 21:09:11.0
+18-04-19.17:33:34.195 [http-nio-8080-exec-9] TRACE selectAll               - <==        Row: 3, 1, jack, 123, 123, null, 1, 2018-04-19 22:34:27.0, null
+18-04-19.17:33:34.196 [http-nio-8080-exec-9] DEBUG selectAll               - <==      Total: 2
+18-04-19.17:33:38.179 [http-nio-8080-exec-10] INFO  LogInterceptor          - 请求路径：/user/3
+18-04-19.17:33:38.180 [http-nio-8080-exec-10] DEBUG selectByPrimaryKey      - ==>  Preparing: select id, organization_id, username, password, salt, role_ids, locked, create_time, update_time from sys_user where id = ? 
+18-04-19.17:33:38.181 [http-nio-8080-exec-10] DEBUG selectByPrimaryKey      - ==> Parameters: 3(Long)
+18-04-19.17:33:38.187 [http-nio-8080-exec-10] TRACE selectByPrimaryKey      - <==    Columns: id, organization_id, username, password, salt, role_ids, locked, create_time, update_time
+18-04-19.17:33:38.188 [http-nio-8080-exec-10] TRACE selectByPrimaryKey      - <==        Row: 3, 1, jack, 123, 123, null, 1, 2018-04-19 22:34:27.0, null
+18-04-19.17:33:38.188 [http-nio-8080-exec-10] DEBUG selectByPrimaryKey      - <==      Total: 1
+18-04-19.17:34:07.322 [main            ] INFO  SpringBootMain          - Starting SpringBootMain on ZB-MP120GHR with PID 14876 (D:\jcode\springboot-integration\web\target\classes started by zhaochen5 in D:\jcode\springboot-integration)
+18-04-19.17:34:07.327 [main            ] INFO  SpringBootMain          - The following profiles are active: beta
+18-04-19.17:34:07.437 [main            ] INFO  AnnotationConfigServletWebServerApplicationContext  - Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@3f56875e: startup date [Thu Apr 19 17:34:07 CST 2018]; root of context hierarchy
+18-04-19.17:34:08.551 [main            ] INFO  RepositoryConfigurationDelegate  - Multiple Spring Data modules found, entering strict repository configuration mode!
+18-04-19.17:34:08.942 [main            ] INFO  PostProcessorRegistrationDelegate$BeanPostProcessorChecker  - Bean 'org.springframework.amqp.rabbit.annotation.RabbitBootstrapConfiguration' of type [org.springframework.amqp.rabbit.annotation.RabbitBootstrapConfiguration$$EnhancerBySpringCGLIB$$735d8fb5] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+18-04-19.17:34:09.005 [main            ] INFO  PostProcessorRegistrationDelegate$BeanPostProcessorChecker  - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$acf1d187] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+18-04-19.17:34:09.318 [main            ] INFO  TomcatWebServer         - Tomcat initialized with port(s): 8081 (http)
+18-04-19.17:34:09.330 [main            ] INFO  Http11NioProtocol       - Initializing ProtocolHandler ["http-nio-8081"]
+18-04-19.17:34:09.343 [main            ] INFO  StandardService         - Starting service [Tomcat]
+18-04-19.17:34:09.343 [main            ] INFO  StandardEngine          - Starting Servlet Engine: Apache Tomcat/8.5.29
+18-04-19.17:34:09.347 [localhost-startStop-1] INFO  AprLifecycleListener    - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk1.8.0_162\bin;C:\windows\Sun\Java\bin;C:\windows\system32;C:\windows;C:\Program Files\Python36\Scripts\;C:\Program Files\Python36\;C:\ProgramData\Oracle\Java\javapath;C:\windows\system32;C:\windows;C:\windows\System32\Wbem;C:\windows\System32\WindowsPowerShell\v1.0\;C:\Program Files\Git\cmd;C:\ProgramData\chocolatey\bin;D:\software\Go\bin;D:\software\nodejs\;C:\Users\zhaochen5\AppData\Roaming\npm;D:\software\Microsoft VS Code\bin;.]
+18-04-19.17:34:09.451 [localhost-startStop-1] INFO  [/]                     - Initializing Spring embedded WebApplicationContext
+18-04-19.17:34:09.452 [localhost-startStop-1] INFO  ContextLoader           - Root WebApplicationContext: initialization completed in 2015 ms
+18-04-19.17:34:09.656 [localhost-startStop-1] INFO  ServletRegistrationBean  - Servlet statViewServlet mapped to [/druid/*]
+18-04-19.17:34:09.658 [localhost-startStop-1] INFO  ServletRegistrationBean  - Servlet dispatcherServlet mapped to [/]
+18-04-19.17:34:09.662 [localhost-startStop-1] INFO  FilterRegistrationBean  - Mapping filter: 'characterEncodingFilter' to: [/*]
+18-04-19.17:34:09.662 [localhost-startStop-1] INFO  FilterRegistrationBean  - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+18-04-19.17:34:09.662 [localhost-startStop-1] INFO  FilterRegistrationBean  - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+18-04-19.17:34:09.662 [localhost-startStop-1] INFO  FilterRegistrationBean  - Mapping filter: 'requestContextFilter' to: [/*]
+18-04-19.17:34:09.662 [localhost-startStop-1] INFO  FilterRegistrationBean  - Mapping filter: 'webStatFilter' to urls: [/*]
+18-04-19.17:34:09.662 [localhost-startStop-1] INFO  FilterRegistrationBean  - Mapping filter: 'corsFilter' to: [/*]
+18-04-19.17:34:10.749 [main            ] INFO  SimpleUrlHandlerMapping  - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+18-04-19.17:34:10.868 [main            ] INFO  RequestMappingHandlerAdapter  - Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@3f56875e: startup date [Thu Apr 19 17:34:07 CST 2018]; root of context hierarchy
+18-04-19.17:34:10.940 [main            ] INFO  RequestMappingHandlerMapping  - Mapped "{[/user/list],methods=[GET],produces=[application/json;charset=UTF-8]}" onto public org.flow.utils.ResponseResult<java.util.List<org.flow.entity.User>> org.flow.controller.UserController.getUsers()
+18-04-19.17:34:10.943 [main            ] INFO  RequestMappingHandlerMapping  - Mapped "{[/user/{id}],methods=[GET],produces=[application/json;charset=UTF-8]}" onto public org.flow.utils.ResponseResult<org.flow.entity.User> org.flow.controller.UserController.getUserById(java.lang.Long)
+18-04-19.17:34:10.943 [main            ] INFO  RequestMappingHandlerMapping  - Mapped "{[/user],methods=[POST],produces=[application/json;charset=UTF-8]}" onto public org.flow.utils.ResponseResult<org.flow.entity.User> org.flow.controller.UserController.insertSaveUser(org.flow.entity.User)
+18-04-19.17:34:10.944 [main            ] INFO  RequestMappingHandlerMapping  - Mapped "{[/user],methods=[PUT],produces=[application/json;charset=UTF-8]}" onto public org.flow.utils.ResponseResult<org.flow.entity.User> org.flow.controller.UserController.updateSaveUser(org.flow.entity.User)
+18-04-19.17:34:10.944 [main            ] INFO  RequestMappingHandlerMapping  - Mapped "{[/user/{id}],methods=[DELETE],produces=[application/json;charset=UTF-8]}" onto public org.flow.utils.ResponseResult<org.flow.entity.User> org.flow.controller.UserController.deleteSaveUser(java.lang.Long)
+18-04-19.17:34:10.947 [main            ] INFO  RequestMappingHandlerMapping  - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+18-04-19.17:34:10.947 [main            ] INFO  RequestMappingHandlerMapping  - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+18-04-19.17:34:10.988 [main            ] INFO  SimpleUrlHandlerMapping  - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+18-04-19.17:34:10.988 [main            ] INFO  SimpleUrlHandlerMapping  - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+18-04-19.17:34:11.011 [main            ] INFO  ExceptionHandlerExceptionResolver  - Detected @ExceptionHandler methods in exceptionAspect
+18-04-19.17:34:12.422 [main            ] INFO  AnnotationMBeanExporter  - Registering beans for JMX exposure on startup
+18-04-19.17:34:12.423 [main            ] INFO  AnnotationMBeanExporter  - Bean with name 'dataSource' has been autodetected for JMX exposure
+18-04-19.17:34:12.431 [main            ] INFO  AnnotationMBeanExporter  - Bean with name 'rabbitConnectionFactory' has been autodetected for JMX exposure
+18-04-19.17:34:12.433 [main            ] INFO  AnnotationMBeanExporter  - Located MBean 'dataSource': registering with JMX server as MBean [com.alibaba.druid.pool:name=dataSource,type=DruidDataSource]
+18-04-19.17:34:12.436 [main            ] INFO  AnnotationMBeanExporter  - Located managed bean 'rabbitConnectionFactory': registering with JMX server as MBean [org.springframework.amqp.rabbit.connection:name=rabbitConnectionFactory,type=CachingConnectionFactory]
+18-04-19.17:34:12.458 [main            ] INFO  DefaultLifecycleProcessor  - Starting beans in phase 2147483647
+18-04-19.17:34:12.466 [main            ] INFO  Http11NioProtocol       - Starting ProtocolHandler ["http-nio-8081"]
+18-04-19.17:34:12.476 [main            ] INFO  NioSelectorPool         - Using a shared selector for servlet write/read
+18-04-19.17:34:12.494 [main            ] INFO  TomcatWebServer         - Tomcat started on port(s): 8081 (http) with context path ''
+18-04-19.17:34:12.498 [main            ] INFO  SpringBootMain          - Started SpringBootMain in 6.125 seconds (JVM running for 8.503)
+18-04-19.17:34:21.908 [http-nio-8081-exec-1] INFO  [/]                     - Initializing Spring FrameworkServlet 'dispatcherServlet'
+18-04-19.17:34:21.908 [http-nio-8081-exec-1] INFO  DispatcherServlet       - FrameworkServlet 'dispatcherServlet': initialization started
+18-04-19.17:34:21.929 [http-nio-8081-exec-1] INFO  DispatcherServlet       - FrameworkServlet 'dispatcherServlet': initialization completed in 21 ms
+18-04-19.17:34:21.949 [http-nio-8081-exec-1] INFO  LogInterceptor          - 请求路径：/user/3
+18-04-19.17:34:22.013 [http-nio-8081-exec-1] INFO  DruidDataSource         - {dataSource-1} inited
+18-04-19.17:34:22.168 [http-nio-8081-exec-1] DEBUG selectByPrimaryKey      - ==>  Preparing: select id, organization_id, username, password, salt, role_ids, locked, create_time, update_time from sys_user where id = ? 
+18-04-19.17:34:22.184 [http-nio-8081-exec-1] DEBUG selectByPrimaryKey      - ==> Parameters: 3(Long)
+18-04-19.17:34:22.194 [http-nio-8081-exec-1] TRACE selectByPrimaryKey      - <==    Columns: id, organization_id, username, password, salt, role_ids, locked, create_time, update_time
+18-04-19.17:34:22.195 [http-nio-8081-exec-1] TRACE selectByPrimaryKey      - <==        Row: 3, 1, jack, 123, 123, null, 1, 2018-04-19 22:34:27.0, null
+18-04-19.17:34:22.197 [http-nio-8081-exec-1] DEBUG selectByPrimaryKey      - <==      Total: 1
