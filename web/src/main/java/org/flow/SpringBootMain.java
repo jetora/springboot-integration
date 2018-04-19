@@ -6,7 +6,6 @@ import org.springframework.boot.web.servlet.ServletComponentScan;
 import org.springframework.transaction.annotation.EnableTransactionManagement;
 
 @SpringBootApplication    // 启动SpringBoot程序，而后自带子包扫描
-@ServletComponentScan
 @EnableTransactionManagement
 public class SpringBootMain {
     public static void main(String[] args) throws Exception {

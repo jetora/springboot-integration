@@ -2,6 +2,7 @@ package org.flow.service;
 
 
 import org.flow.entity.User;
+import org.springframework.transaction.annotation.Propagation;
 import org.springframework.transaction.annotation.Transactional;
 
 import java.util.List;
@@ -13,6 +14,8 @@ public interface UserService {
      * 创建用户
      * @param user
      */
+    //@Transactional((readOnly = true)
+    @Transactional(propagation=Propagation.REQUIRED)
     public int createUser(User user);
 
     public int updateUser(User user);
